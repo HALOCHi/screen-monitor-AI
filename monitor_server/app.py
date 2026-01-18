@@ -3,15 +3,18 @@ import threading
 from datetime import datetime
 from flask import Flask, request, jsonify, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
 import ollama
 
 app = Flask(__name__)
+CORS(app)  # Разрешаем запросы с других доменов (нужно для фронтенда)
 
 # Настройки папок и БД
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 UPLOAD_FOLDER = os.path.join(BASE_DIR, 'storage')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(BASE_DIR, 'monitoring.db')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
@@ -23,16 +26,25 @@ class ActivityLog(db.Model):
     image_path = db.Column(db.String(255))
     ai_analysis = db.Column(db.Text, default="В очереди на анализ...")
 
+    # Метод для превращения объекта в словарь (для фронтенда)
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "username": self.username,
+            "timestamp": self.timestamp.strftime('%Y-%m-%d %H:%M:%S'),
+            "image_url": f"/storage/{self.username}/{os.path.basename(self.image_path)}",
+            "ai_analysis": self.ai_analysis
+        }
+
 # Создание БД и папок
 if not os.path.exists(UPLOAD_FOLDER): os.makedirs(UPLOAD_FOLDER)
 with app.app_context(): db.create_all()
 
-# Функция анализа (запускается в фоне, чтобы сервер не тормозил)
 def analyze_screenshot(log_id, filepath):
     with app.app_context():
-        log = ActivityLog.query.get(log_id)
+        log = db.session.get(ActivityLog, log_id)
+        if not log: return
         try:
-            # Запрос к нейросети
             res = ollama.chat(model='llava', messages=[{
                 'role': 'user',
                 'content': 'Что делает человек на скриншоте? Опиши кратко программы и сайты. Пиши на русском.',
@@ -47,8 +59,7 @@ def analyze_screenshot(log_id, filepath):
 def upload():
     file = request.files.get('file')
     user = request.form.get('user', 'unknown')
-    
-    if not file: return "No file", 400
+    if not file: return jsonify({"error": "No file"}), 400
 
     user_dir = os.path.join(app.config['UPLOAD_FOLDER'], user)
     os.makedirs(user_dir, exist_ok=True)
@@ -57,22 +68,23 @@ def upload():
     filepath = os.path.join(user_dir, filename)
     file.save(filepath)
     
-    # Пишем в БД
     new_log = ActivityLog(username=user, image_path=filepath)
     db.session.add(new_log)
     db.session.commit()
     
-    # Запускаем ИИ в отдельном потоке
     threading.Thread(target=analyze_screenshot, args=(new_log.id, filepath)).start()
-    
-    return jsonify({"status": "ok"}), 200
+    return jsonify({"status": "ok", "id": new_log.id}), 200
 
-# Раздача картинок для сайта
+# ЭНДПОИНТ ДЛЯ ФРОНТЕНДА (API)
+@app.route('/api/logs/<username>', methods=['GET'])
+def get_logs(username):
+    logs = ActivityLog.query.filter_by(username=username).order_by(ActivityLog.timestamp.desc()).all()
+    return jsonify([log.to_dict() for log in logs])
+
 @app.route('/storage/<path:filename>')
 def serve_image(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
-# Красивый просмотрщик
 @app.route('/dashboard/<username>')
 def dashboard(username):
     logs = ActivityLog.query.filter_by(username=username).order_by(ActivityLog.timestamp.desc()).all()
