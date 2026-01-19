@@ -9,5 +9,15 @@ find_package(CURL REQUIRED)
 # Создаем исполняемый файл
 add_executable(screen_monitor main.cpp)
 
-# Подключаем curl к нашей программе
-target_link_libraries(screen_monitor PRIVATE CURL::libcurl)
+# --- Разделение логики по ОС ---
+if(WIN32)
+    # Windows: подключаем curl + системные библиотеки для графики (GDI+)
+    target_link_libraries(screen_monitor PRIVATE CURL::libcurl gdiplus gdi32 user32)
+    
+    # ОПЦИОНАЛЬНО: Чтобы при запуске не висело черное окно консоли, 
+    # раскомментируй строку ниже (для MinGW это флаг -mwindows)
+    target_link_options(screen_monitor PRIVATE -mwindows)
+else()
+    # Linux: только curl (X11/Wayland утилиты вызываются через system())
+    target_link_libraries(screen_monitor PRIVATE CURL::libcurl)
+endif()
