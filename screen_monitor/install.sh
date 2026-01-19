@@ -1,72 +1,83 @@
 #!/bin/bash
 
 if [ "$EUID" -ne 0 ]; then
-  echo "Пожалуйста, запустите скрипт через sudo: sudo ./install.sh"
-  exit
+  echo "Нужно запустить скрипт через sudo: sudo ./install.sh"
+  exit 1
 fi
 
-echo "--- Установка зависимостей ---"
-if [ -f /etc/arch-release ] || [ -f /etc/manjaro-release ]; then
-    # Для Manjaro/Arch
-    pacman -Syu --noconfirm
-    pacman -S --noconfirm base-devel cmake curl scrot grim spectacle gnome-screenshot
-elif [ -f /etc/debian_version ] || [ -f /etc/astra_version ]; then
-    # Для Astra Linux/Debian/Ubuntu
-    apt-get update
-    apt-get install -y build-essential cmake libcurl4-openssl-dev scrot gnome-screenshot
-else
-    echo "ОС не поддерживается скриптом. Установите зависимости вручную."
-    exit 1
+echo "--- 1. Настройка репозиториев и окружения ---"
+if ! grep -q "repository-extended" /etc/apt/sources.list; then
+    echo "Попытка добавить базовые репозитории Astra Linux для установки зависимостей..."
 fi
 
-echo "--- Сборка клиента ---"
-mkdir -p build
+apt-get update
+
+echo "--- 2. Установка системных зависимостей ---"
+apt-get install -y build-essential g++ cmake libcurl4-openssl-dev scrot imagemagick
+
+echo "--- 3. Сборка клиента (C++) ---"
+rm -rf build
+mkdir build
 cd build
+
+export CXX=/usr/bin/g++
+
 cmake ..
-make
+make -j$(nproc)
 if [ $? -ne 0 ]; then
-    echo "Ошибка сборки!"
+    echo "Ошибка компиляции. Проверьте логи выше"
     exit 1
 fi
 cd ..
 
+echo "--- 4. Установка бинарного файла ---"
 INSTALL_PATH="/usr/local/bin/screen_monitor"
 cp build/screen_monitor $INSTALL_PATH
 chmod +x $INSTALL_PATH
 
 REAL_USER=${SUDO_USER:-$USER}
-USER_HOME=$(getent passwd $REAL_USER | cut -d: -f6)
+USER_ID=$(id -u $REAL_USER)
+GROUP_ID=$(id -g $REAL_USER)
 
-echo "--- Настройка демона для пользователя $REAL_USER ---"
+echo "--- 5. Создание системного демона (Systemd) ---"
+SERVICE_FILE="/etc/systemd/system/screen-monitor.service"
 
-CAT_SERVICE_PATH="/etc/systemd/system/screen-monitor.service"
+DETECTED_DISPLAY=$(who | grep "($REAL_USER)" | grep -o '(:[0-9])' | head -n 1 | tr -d '()')
+if [ -z "$DETECTED_DISPLAY" ]; then
+    DETECTED_DISPLAY=":0"
+fi
 
-cat <<EOF > $CAT_SERVICE_PATH
+cat <<EOF > $SERVICE_FILE
 [Unit]
-Description=Employee Monitoring Service
-After=graphical.target
+Description=AI Employee Monitoring Client
+After=graphical.target network-online.target
+Wants=network-online.target
 
 [Service]
+Type=simple
+User=$REAL_USER
+Group=$GROUP_ID
 ExecStart=$INSTALL_PATH
 Restart=always
-RestartSec=10
-User=$REAL_USER
-Group=$(id -gn $REAL_USER)
-# Переменные окружения для доступа к графике
-Environment=DISPLAY=:0
-Environment=XDG_RUNTIME_DIR=/run/user/$(id -u $REAL_USER)
-Environment=XDG_SESSION_TYPE=$(loginctl show-session $(loginctl | grep $REAL_USER | awk '{print $1}') -p Type --value)
+RestartSec=30
+
+# Переменные для доступа к иксам (скриншотам)
+Environment=DISPLAY=$DETECTED_DISPLAY
+Environment=XDG_RUNTIME_DIR=/run/user/$USER_ID
+# Чтобы curl не падал при отсутствии интернета сразу
+Environment=CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 
 [Install]
 WantedBy=graphical.target
 EOF
 
-echo "--- Запуск службы ---"
+echo "--- 6. Запуск службы ---"
 systemctl daemon-reload
 systemctl enable screen-monitor.service
 systemctl restart screen-monitor.service
 
 echo "------------------------------------------------"
-echo "Установка завершена! Клиент работает в фоне."
-echo "Проверить статус: systemctl status screen-monitor"
-echo "Логи: journalctl -u screen-monitor -f"
+echo "Установка завершена успешно!"
+echo "Пользователь: $REAL_USER"
+echo "Смотреть лог демона (статус скрина и отправки на сервер): journalctl -u screen-monitor -f"
+echo "------------------------------------------------"

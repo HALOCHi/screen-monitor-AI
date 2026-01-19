@@ -17,12 +17,10 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-# --- КОНФИГУРАЦИЯ CELERY ---
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
 celery_app = Celery(app.name, broker=CELERY_BROKER_URL)
 celery_app.conf.update(app.config)
 
-# --- МОДЕЛЬ ДАННЫХ ---
 class ActivityLog(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80))
@@ -45,7 +43,6 @@ with app.app_context(): db.create_all()
 
 @app.route('/api/users')
 def get_users():
-    # Получение списка пользователь
     users = db.session.query(ActivityLog.username).distinct().all()
     return jsonify([u[0] for u in users])
 
@@ -56,7 +53,6 @@ def admin_page():
 
 @app.route('/api/admin/overview')
 def admin_overview():
-    # Берем последние 40 записей из базы
     logs = ActivityLog.query.order_by(ActivityLog.timestamp.desc()).limit(40).all()
     return jsonify([log.to_dict() for log in logs])
 
@@ -69,15 +65,17 @@ def analyze_screenshot_task(log_id, filepath):
         log = db.session.get(ActivityLog, log_id)
         if not log: return
         try:
-            # ПРОМПТ 
             prompt = (
-                "Проанализируй скриншот. Определи одну категорию (Работа, Соцсети, Развлечения, Обучение) "
-                "и одним предложением опиши действия пользователя. "
-                "Формат ответа СТРОГО: [Категория] Описание действия."
-                "Пример: [Работа] Пользователь программирует в VS Code."
-                "Пример: [Развлечения] Пользователь смотрит YouTube."
+                "Analyze this desktop screenshot. "
+    "Identify the main activity. "
+    "Output instructions: "
+    "1. You must respond in RUSSIAN. "
+    "2. Choose one category: [Работа], [Соцсети], [Развлечения], [Обучение]. "
+    "3. Write a one-sentence description in Russian. "
+    "4. STRICT FORMAT: [Category] Description. "
+    "Example: [Работа] Пользователь пишет код в редакторе VS Code."
             )
-           
+            
             
             res = ollama.chat(model='llava', messages=[{
                 'role': 'user',
@@ -108,7 +106,6 @@ def upload():
     db.session.add(new_log)
     db.session.commit()
     
-    # Отправляем задачу в очередь Redis, не дожидаясь выполнения
     analyze_screenshot_task.delay(new_log.id, filepath) 
     
     return jsonify({"status": "ok", "id": new_log.id}), 200
