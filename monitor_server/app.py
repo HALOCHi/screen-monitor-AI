@@ -6,7 +6,6 @@ from flask_cors import CORS
 from celery import Celery
 import ollama
 
-# --- КОНФИГУРАЦИЯ ---
 app = Flask(__name__)
 CORS(app) 
 
@@ -46,7 +45,7 @@ with app.app_context(): db.create_all()
 
 @app.route('/api/users')
 def get_users():
-    # Получаем список уникальных имен пользователей
+    # Получение списка пользователь
     users = db.session.query(ActivityLog.username).distinct().all()
     return jsonify([u[0] for u in users])
 
@@ -70,7 +69,7 @@ def analyze_screenshot_task(log_id, filepath):
         log = db.session.get(ActivityLog, log_id)
         if not log: return
         try:
-            # --- ИЗМЕНЕННЫЙ ПРОМПТ ---
+            # ПРОМПТ 
             prompt = (
                 "Проанализируй скриншот. Определи одну категорию (Работа, Соцсети, Развлечения, Обучение) "
                 "и одним предложением опиши действия пользователя. "
@@ -78,7 +77,7 @@ def analyze_screenshot_task(log_id, filepath):
                 "Пример: [Работа] Пользователь программирует в VS Code."
                 "Пример: [Развлечения] Пользователь смотрит YouTube."
             )
-            # --- КОНЕЦ ИЗМЕНЕНИЯ ---
+           
             
             res = ollama.chat(model='llava', messages=[{
                 'role': 'user',
