@@ -11,7 +11,7 @@
 </head>
 <body class="bg-gray-50 font-sans">
     <div class="flex h-screen">
-        <!-- Боковая панель -->
+        <!-- Боковая панель (обновить классы на читаемые)-->  
         <div class="w-72 bg-slate-900 text-white flex flex-col">
             <div class="p-6 border-b border-slate-800">
                 <h1 class="text-xl font-bold flex items-center gap-2">
@@ -24,7 +24,6 @@
             </div>
         </div>
 
-        <!-- Основная область -->
         <div class="flex-1 flex flex-col overflow-hidden">
             <header class="h-16 bg-white border-b flex items-center justify-between px-8 shadow-sm">
                 <h2 id="current-user-name" class="text-lg font-semibold text-gray-700">Выберите пользователя</h2>
@@ -109,7 +108,6 @@
             }
         }
 
-        // Запускаем при загрузке страницы
         loadUsers();
         // Автообновление списка каждые 30 секунд
         setInterval(loadUsers, 30000);
