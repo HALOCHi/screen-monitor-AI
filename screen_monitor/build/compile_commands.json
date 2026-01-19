@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/alex/Документы/screen-monitor/build",
-  "command": "/usr/bin/g++ -g -std=gnu++17 -o CMakeFiles/screen_monitor.dir/main.cpp.o -c /home/alex/Документы/screen-monitor/main.cpp",
-  "file": "/home/alex/Документы/screen-monitor/main.cpp",
-  "output": "/home/alex/Документы/screen-monitor/build/CMakeFiles/screen_monitor.dir/main.cpp.o"
-}
-]

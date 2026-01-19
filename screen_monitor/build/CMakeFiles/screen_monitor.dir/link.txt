@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/screen_monitor.dir/link.d CMakeFiles/screen_monitor.dir/main.cpp.o -o screen_monitor  /usr/lib/libcurl.so /usr/lib/libcurl.so

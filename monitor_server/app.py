@@ -1,15 +1,15 @@
 import os
-import threading
 from datetime import datetime
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify, send_from_directory, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
+from celery import Celery
 import ollama
 
+# --- КОНФИГУРАЦИЯ ---
 app = Flask(__name__)
-CORS(app)  # Разрешаем запросы с других доменов (нужно для фронтенда)
+CORS(app) 
 
-# Настройки папок и БД
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 UPLOAD_FOLDER = os.path.join(BASE_DIR, 'storage')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(BASE_DIR, 'monitoring.db')
@@ -18,7 +18,12 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-# Модель данных
+# --- КОНФИГУРАЦИЯ CELERY ---
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+celery_app = Celery(app.name, broker=CELERY_BROKER_URL)
+celery_app.conf.update(app.config)
+
+# --- МОДЕЛЬ ДАННЫХ ---
 class ActivityLog(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80))
@@ -26,7 +31,6 @@ class ActivityLog(db.Model):
     image_path = db.Column(db.String(255))
     ai_analysis = db.Column(db.Text, default="В очереди на анализ...")
 
-    # Метод для превращения объекта в словарь (для фронтенда)
     def to_dict(self):
         return {
             "id": self.id,
@@ -36,34 +40,67 @@ class ActivityLog(db.Model):
             "ai_analysis": self.ai_analysis
         }
 
-# Создание БД и папок
 if not os.path.exists(UPLOAD_FOLDER): os.makedirs(UPLOAD_FOLDER)
 with app.app_context(): db.create_all()
 
-def analyze_screenshot(log_id, filepath):
+
+@app.route('/api/users')
+def get_users():
+    # Получаем список уникальных имен пользователей
+    users = db.session.query(ActivityLog.username).distinct().all()
+    return jsonify([u[0] for u in users])
+
+
+@app.route('/admin')
+def admin_page():
+    return render_template('admin.html')
+
+@app.route('/api/admin/overview')
+def admin_overview():
+    # Берем последние 40 записей из базы
+    logs = ActivityLog.query.order_by(ActivityLog.timestamp.desc()).limit(40).all()
+    return jsonify([log.to_dict() for log in logs])
+
+
+
+
+@celery_app.task
+def analyze_screenshot_task(log_id, filepath):
     with app.app_context():
         log = db.session.get(ActivityLog, log_id)
         if not log: return
         try:
+            # --- ИЗМЕНЕННЫЙ ПРОМПТ ---
+            prompt = (
+                "Проанализируй скриншот. Определи одну категорию (Работа, Соцсети, Развлечения, Обучение) "
+                "и одним предложением опиши действия пользователя. "
+                "Формат ответа СТРОГО: [Категория] Описание действия."
+                "Пример: [Работа] Пользователь программирует в VS Code."
+                "Пример: [Развлечения] Пользователь смотрит YouTube."
+            )
+            # --- КОНЕЦ ИЗМЕНЕНИЯ ---
+            
             res = ollama.chat(model='llava', messages=[{
                 'role': 'user',
-                'content': 'Что делает человек на скриншоте? Опиши кратко программы и сайты. Пиши на русском.',
+                'content': prompt,
                 'images': [filepath]
             }])
             log.ai_analysis = res['message']['content']
         except Exception as e:
-            log.ai_analysis = f"Ошибка ИИ: {str(e)}"
+            log.ai_analysis = f"Ошибка анализа: {str(e)}"
         db.session.commit()
 
+
+
+
+# --- МАРШРУТЫ FLASK ---
 @app.route('/upload', methods=['POST'])
 def upload():
     file = request.files.get('file')
     user = request.form.get('user', 'unknown')
     if not file: return jsonify({"error": "No file"}), 400
-
     user_dir = os.path.join(app.config['UPLOAD_FOLDER'], user)
     os.makedirs(user_dir, exist_ok=True)
-    
     filename = f"{datetime.now().strftime('%H%M%S')}.png"
     filepath = os.path.join(user_dir, filename)
     file.save(filepath)
@@ -72,7 +109,9 @@ def upload():
     db.session.add(new_log)
     db.session.commit()
     
-    threading.Thread(target=analyze_screenshot, args=(new_log.id, filepath)).start()
+    # Отправляем задачу в очередь Redis, не дожидаясь выполнения
+    analyze_screenshot_task.delay(new_log.id, filepath) 
+    
     return jsonify({"status": "ok", "id": new_log.id}), 200
 
 # ЭНДПОИНТ ДЛЯ ФРОНТЕНДА (API)

@@ -1,3 +1,3 @@
-/home/alex/Документы/screen-monitor/build/CMakeFiles/screen_monitor.dir
-/home/alex/Документы/screen-monitor/build/CMakeFiles/edit_cache.dir
-/home/alex/Документы/screen-monitor/build/CMakeFiles/rebuild_cache.dir
+/home/alex/Документы/GitHub/screen-monitor-AI/screen_monitor/build/CMakeFiles/screen_monitor.dir
+/home/alex/Документы/GitHub/screen-monitor-AI/screen_monitor/build/CMakeFiles/edit_cache.dir
+/home/alex/Документы/GitHub/screen-monitor-AI/screen_monitor/build/CMakeFiles/rebuild_cache.dir

@@ -66,7 +66,7 @@ void send_file(string filename, string user) {
         curl_mime_name(field, "user");
         curl_mime_data(field, user.c_str(), CURL_ZERO_TERMINATED);
 
-        curl_easy_setopt(curl, CURLOPT_URL, "http://127.0.0.1:5000/upload");
+        curl_easy_setopt(curl, CURLOPT_URL, "http://192.168.31.173:5000/upload");
         curl_easy_setopt(curl, CURLOPT_MIMEPOST, form);
 
         CURLcode res = curl_easy_perform(curl);
@@ -101,7 +101,7 @@ void run_monitor() {
             remove(filename.c_str()); 
         }
         
-        this_thread::sleep_for(chrono::seconds(3));
+        this_thread::sleep_for(chrono::seconds(60));
     }
     curl_global_cleanup();
 }
