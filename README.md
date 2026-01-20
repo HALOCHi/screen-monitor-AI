@@ -63,7 +63,7 @@ celery -A app.celery_app worker --loglevel=info --concurrency=1
 ### Windows 10/11
 
 **Требования для сборки EXE:** Visual Studio 2022/2026 + C++ Desktop Development + MSVC v143 + Windows 10/11 SDK. 
-Эти пункты нужны для сборки EXE-шника. Для тестирования уже готовый исполняемый файл можно запустить `screen_monitor.exe` по пути `screen-monitor-AI/screen_monitor/build/Release/screen_monitor.exe`
+Эти пункты нужны для сборки EXE-шника. Для тестирования уже готовый исполняемый файл можно запустить `screen_monitor.exe` по пути `screen-monitor-AI/screen_monitor/Release/screen_monitor.exe`
 
 Если решили собрать EXE:
 1. В `main.cpp` на данный момент указан IP сервера, где обрабатываются скрины.
