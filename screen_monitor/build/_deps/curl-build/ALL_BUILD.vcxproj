@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{86B2AFB7-CCF9-32B7-9D5D-E3DA5273E759}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindMsys.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPerl.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\CurlSymbolHiding.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\CurlTests.c;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\FindLibidn2.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\FindLibssh2.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\FindNGHTTP2.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\Macros.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\OtherTests.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\PickyWarnings.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\Platforms\WindowsCache.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\Utilities.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\cmake_uninstall.cmake.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\curl-config.cmake.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\curl-config.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\libcurl.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindMsys.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPerl.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\CurlSymbolHiding.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\CurlTests.c;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\FindLibidn2.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\FindLibssh2.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\FindNGHTTP2.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\Macros.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\OtherTests.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\PickyWarnings.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\Platforms\WindowsCache.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\Utilities.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\cmake_uninstall.cmake.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\curl-config.cmake.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\curl-config.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\libcurl.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindMsys.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPerl.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\CurlSymbolHiding.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\CurlTests.c;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\FindLibidn2.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\FindLibssh2.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\FindNGHTTP2.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\Macros.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\OtherTests.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\PickyWarnings.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\Platforms\WindowsCache.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\Utilities.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\cmake_uninstall.cmake.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\curl-config.cmake.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\curl-config.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\libcurl.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindMsys.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPerl.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\CurlSymbolHiding.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\CurlTests.c;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\FindLibidn2.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\FindLibssh2.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\FindNGHTTP2.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\Macros.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\OtherTests.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\PickyWarnings.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\Platforms\WindowsCache.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\Utilities.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\cmake_uninstall.cmake.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\CMake\curl-config.cmake.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\curl-config.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\libcurl.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\ZERO_CHECK.vcxproj">
+      <Project>{5DD725BF-0781-322B-AA73-56231BD065E8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\docs\curl-generate-curl-config.1.vcxproj">
+      <Project>{0535A384-B5A5-362B-9A14-5D26E2DE63F1}</Project>
+      <Name>curl-generate-curl-config.1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\docs\curl-generate-mk-ca-bundle.1.vcxproj">
+      <Project>{60DF219F-F3F3-394E-8C9B-F503D1EDABDE}</Project>
+      <Name>curl-generate-mk-ca-bundle.1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\docs\libcurl\curl-man.vcxproj">
+      <Project>{0CA2ABFC-3E32-3117-99B9-9789B5FA102E}</Project>
+      <Name>curl-man</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\lib\libcurl_object.vcxproj">
+      <Project>{C5907352-452C-35CA-9CB8-55869FF9B42A}</Project>
+      <Name>libcurl_object</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\lib\libcurl_static.vcxproj">
+      <Project>{0BF4B61C-5E79-3907-8997-480D2E9BF376}</Project>
+      <Name>libcurl_static</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

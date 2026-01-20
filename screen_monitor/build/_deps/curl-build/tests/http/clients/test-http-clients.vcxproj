@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C98DACDD-EB4B-3CE0-A1D3-96A0625D0A22}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>test-http-clients</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\http\clients\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/tests/http/clients/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/http/clients/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\Makefile.inc.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\http\clients\Makefile.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/tests/http/clients/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/http/clients/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\Makefile.inc.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\http\clients\Makefile.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/tests/http/clients/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/http/clients/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\Makefile.inc.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\http\clients\Makefile.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/tests/http/clients/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/http/clients/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\Makefile.inc.cmake;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\http\clients\Makefile.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\ZERO_CHECK.vcxproj">
+      <Project>{5DD725BF-0781-322B-AA73-56231BD065E8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-h2-pausing.vcxproj">
+      <Project>{4442336A-6AFC-3E90-BD5C-706CA094B8F0}</Project>
+      <Name>curlt-client-h2-pausing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-h2-serverpush.vcxproj">
+      <Project>{9FF5ED41-3F12-3B2A-B722-FC3D86F2B210}</Project>
+      <Name>curlt-client-h2-serverpush</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-h2-upgrade-extreme.vcxproj">
+      <Project>{5F8AE4EC-1B04-3B4D-B681-FDB1E9D9EA27}</Project>
+      <Name>curlt-client-h2-upgrade-extreme</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-hx-download.vcxproj">
+      <Project>{68D737D7-F862-3BCD-AA1B-2CDA8BD91602}</Project>
+      <Name>curlt-client-hx-download</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-hx-upload.vcxproj">
+      <Project>{CAC51931-3AA0-3A01-BA7F-7C8A454C60A0}</Project>
+      <Name>curlt-client-hx-upload</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-tls-session-reuse.vcxproj">
+      <Project>{21C2C3FF-847B-3088-B833-3D536F304A01}</Project>
+      <Name>curlt-client-tls-session-reuse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-upload-pausing.vcxproj">
+      <Project>{960D49DF-7BF3-3B8B-A549-B817A6C8C754}</Project>
+      <Name>curlt-client-upload-pausing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-ws-data.vcxproj">
+      <Project>{95DD369B-EB5B-3262-8577-9D49C81DF192}</Project>
+      <Name>curlt-client-ws-data</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-ws-pingpong.vcxproj">
+      <Project>{8A04EAB8-6C9F-32C1-B5B1-F3D9D7C21638}</Project>
+      <Name>curlt-client-ws-pingpong</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

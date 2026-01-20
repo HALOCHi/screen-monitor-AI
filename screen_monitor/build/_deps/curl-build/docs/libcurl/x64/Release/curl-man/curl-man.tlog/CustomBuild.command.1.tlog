@@ -1,0 +1,42 @@
+^C:\USERS\626\DOCUMENTS\GITHUB\SCREEN-MONITOR-AI\SCREEN_MONITOR\BUILD\CMAKEFILES\9D30027CCE33BB6B494F768A4D5242EA\LIBCURL-SYMBOLS.MD.RULE
+setlocal
+C:\msys64\usr\bin\perl.exe C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/docs/libcurl/mksymbolsmanpage.pl < C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/docs/libcurl/symbols-in-versions > libcurl-symbols.md
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\626\DOCUMENTS\GITHUB\SCREEN-MONITOR-AI\SCREEN_MONITOR\BUILD\CMAKEFILES\9D30027CCE33BB6B494F768A4D5242EA\CURL_EASY_CLEANUP.3.RULE
+setlocal
+cd C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\docs\libcurl
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\msys64\usr\bin\perl.exe C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/scripts/cd2nroff -k -d C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/docs/libcurl curl_easy_cleanup.md curl_easy_duphandle.md curl_easy_escape.md curl_easy_getinfo.md curl_easy_header.md curl_easy_init.md curl_easy_nextheader.md curl_easy_option_by_id.md curl_easy_option_by_name.md curl_easy_option_next.md curl_easy_pause.md curl_easy_perform.md curl_easy_recv.md curl_easy_reset.md curl_easy_send.md curl_easy_setopt.md curl_easy_strerror.md curl_easy_unescape.md curl_easy_upkeep.md curl_escape.md curl_formadd.md curl_formfree.md curl_formget.md curl_free.md curl_getdate.md curl_getenv.md curl_global_cleanup.md curl_global_init.md curl_global_init_mem.md curl_global_trace.md curl_global_sslset.md curl_mime_addpart.md curl_mime_data.md curl_mime_data_cb.md curl_mime_encoder.md curl_mime_filedata.md curl_mime_filename.md curl_mime_free.md curl_mime_headers.md curl_mime_init.md curl_mime_name.md curl_mime_subparts.md curl_mime_type.md curl_mprintf.md curl_multi_add_handle.md curl_multi_assign.md curl_multi_cleanup.md curl_multi_fdset.md curl_multi_get_handles.md curl_multi_info_read.md curl_multi_init.md curl_multi_perform.md curl_multi_poll.md curl_multi_remove_handle.md curl_multi_setopt.md curl_multi_socket.md curl_multi_socket_action.md curl_multi_socket_all.md curl_multi_strerror.md curl_multi_timeout.md curl_multi_wakeup.md curl_multi_wait.md curl_multi_waitfds.md curl_pushheader_bynum.md curl_pushheader_byname.md curl_share_cleanup.md curl_share_init.md curl_share_setopt.md curl_share_strerror.md curl_slist_append.md curl_slist_free_all.md curl_strequal.md curl_strnequal.md curl_unescape.md curl_url.md curl_url_cleanup.md curl_url_dup.md curl_url_get.md curl_url_set.md curl_url_strerror.md curl_version.md curl_version_info.md curl_ws_meta.md curl_ws_recv.md curl_ws_send.md libcurl-easy.md libcurl-env.md libcurl-env-dbg.md libcurl-errors.md libcurl-multi.md libcurl-security.md libcurl-share.md C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/docs/libcurl/libcurl-symbols.md libcurl-thread.md libcurl-tutorial.md libcurl-url.md libcurl-ws.md libcurl.md
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\626\DOCUMENTS\GITHUB\SCREEN-MONITOR-AI\SCREEN_MONITOR\BUILD\CMAKEFILES\4B33F0B2AD33D5384462CFD5FCB0C17C\CURL-MAN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\626\DOCUMENTS\GITHUB\SCREEN-MONITOR-AI\SCREEN_MONITOR\BUILD\_DEPS\CURL-SRC\DOCS\LIBCURL\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/docs/libcurl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

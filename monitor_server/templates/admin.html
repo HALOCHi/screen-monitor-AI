@@ -9,9 +9,8 @@
         .log-card:hover img { transform: scale(1.02); }
     </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50 font-sans"> <!-- Сменить классы!!  ????-->
     <div class="flex h-screen">
-        <!-- Боковая панель (обновить классы на читаемые)-->  
         <div class="w-72 bg-slate-900 text-white flex flex-col">
             <div class="p-6 border-b border-slate-800">
                 <h1 class="text-xl font-bold flex items-center gap-2">
@@ -20,7 +19,6 @@
             </div>
             <div id="user-list" class="flex-1 overflow-y-auto p-4 space-y-2">
                 <p class="text-slate-500 text-xs uppercase font-semibold px-2">Сотрудники</p>
-                <!-- Сюда вставятся пользователи -->
             </div>
         </div>
 
@@ -39,14 +37,12 @@
     </div>
 
     <script>
-        // Функция для загрузки списка пользователей
         async function loadUsers() {
             try {
                 const response = await fetch('/api/users');
                 const users = await response.json();
                 const container = document.getElementById('user-list');
                 
-                // Очищаем список, оставляя заголовок
                 container.innerHTML = '<p class="text-slate-500 text-xs uppercase font-semibold px-2 mb-2">Сотрудники</p>';
                 
                 users.forEach(user => {
@@ -61,9 +57,7 @@
             }
         }
 
-        // Функция для загрузки логов конкретного пользователя
         async function selectUser(username, element) {
-            // Подсветка активного пользователя
             document.querySelectorAll('#user-list div').forEach(el => el.classList.remove('bg-blue-600'));
             element.classList.add('bg-blue-600');
             
@@ -75,7 +69,7 @@
                 const response = await fetch(`/api/logs/${username}`);
                 const logs = await response.json();
                 
-                container.innerHTML = ''; // Очищаем
+                container.innerHTML = '';
 
                 if (logs.length === 0) {
                     container.innerHTML = '<div class="col-span-full text-center text-gray-400">Нет записей</div>';
@@ -109,7 +103,6 @@
         }
 
         loadUsers();
-        // Автообновление списка каждые 30 секунд
         setInterval(loadUsers, 30000);
     </script>
 </body>

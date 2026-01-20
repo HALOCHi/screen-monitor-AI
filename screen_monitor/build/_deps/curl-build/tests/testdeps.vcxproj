@@ -1,0 +1,1390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3783F4ED-3708-366B-9C25-B8B21EE5AC1A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>testdeps</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\config.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\configurehelp.pm.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\config.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\configurehelp.pm.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\config.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\configurehelp.pm.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\config.in;C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\tests\configurehelp.pm.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\ZERO_CHECK.vcxproj">
+      <Project>{5DD725BF-0781-322B-AA73-56231BD065E8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-h2-pausing.vcxproj">
+      <Project>{4442336A-6AFC-3E90-BD5C-706CA094B8F0}</Project>
+      <Name>curlt-client-h2-pausing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-h2-serverpush.vcxproj">
+      <Project>{9FF5ED41-3F12-3B2A-B722-FC3D86F2B210}</Project>
+      <Name>curlt-client-h2-serverpush</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-h2-upgrade-extreme.vcxproj">
+      <Project>{5F8AE4EC-1B04-3B4D-B681-FDB1E9D9EA27}</Project>
+      <Name>curlt-client-h2-upgrade-extreme</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-hx-download.vcxproj">
+      <Project>{68D737D7-F862-3BCD-AA1B-2CDA8BD91602}</Project>
+      <Name>curlt-client-hx-download</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-hx-upload.vcxproj">
+      <Project>{CAC51931-3AA0-3A01-BA7F-7C8A454C60A0}</Project>
+      <Name>curlt-client-hx-upload</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-tls-session-reuse.vcxproj">
+      <Project>{21C2C3FF-847B-3088-B833-3D536F304A01}</Project>
+      <Name>curlt-client-tls-session-reuse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-upload-pausing.vcxproj">
+      <Project>{960D49DF-7BF3-3B8B-A549-B817A6C8C754}</Project>
+      <Name>curlt-client-upload-pausing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-ws-data.vcxproj">
+      <Project>{95DD369B-EB5B-3262-8577-9D49C81DF192}</Project>
+      <Name>curlt-client-ws-data</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\http\clients\curlt-client-ws-pingpong.vcxproj">
+      <Project>{8A04EAB8-6C9F-32C1-B5B1-F3D9D7C21638}</Project>
+      <Name>curlt-client-ws-pingpong</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\server\disabled.vcxproj">
+      <Project>{79408373-259C-3DA2-AB4F-4D084F79AF83}</Project>
+      <Name>disabled</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\server\getpart.vcxproj">
+      <Project>{169640E9-B406-3C6C-89A0-1895BD027865}</Project>
+      <Name>getpart</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1156.vcxproj">
+      <Project>{44F02382-4623-3EF2-BB6C-12289B933E72}</Project>
+      <Name>lib1156</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1301.vcxproj">
+      <Project>{66EAB7CF-F458-39A0-9DC7-AF43B51F3348}</Project>
+      <Name>lib1301</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1485.vcxproj">
+      <Project>{5B3784E8-8341-394C-BC48-E32FB6E6B081}</Project>
+      <Name>lib1485</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1500.vcxproj">
+      <Project>{3069B92A-4E4B-3AB7-9B00-61C54DB9F083}</Project>
+      <Name>lib1500</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1501.vcxproj">
+      <Project>{F20C715F-5C69-38C6-BF65-182371BAE7F1}</Project>
+      <Name>lib1501</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1502.vcxproj">
+      <Project>{BD12717A-E17D-3E50-8405-009ADC48E6FB}</Project>
+      <Name>lib1502</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1503.vcxproj">
+      <Project>{6402904A-5DCE-361B-A823-D4E2CAF2A30A}</Project>
+      <Name>lib1503</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1504.vcxproj">
+      <Project>{84C7F638-B8D9-3765-936A-64CAD03651F9}</Project>
+      <Name>lib1504</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1505.vcxproj">
+      <Project>{3B6413C3-B583-3D82-8988-A74E91572C4B}</Project>
+      <Name>lib1505</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1506.vcxproj">
+      <Project>{C26125CC-D537-30CA-B5DD-910523E590F2}</Project>
+      <Name>lib1506</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1507.vcxproj">
+      <Project>{3494E71A-9A5D-3D4F-AB65-35938D07E62C}</Project>
+      <Name>lib1507</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1508.vcxproj">
+      <Project>{F6C0C950-ABDA-3707-B2AB-84086B7EA945}</Project>
+      <Name>lib1508</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1509.vcxproj">
+      <Project>{3FC263BF-1782-38CB-9082-3884B8A86177}</Project>
+      <Name>lib1509</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1510.vcxproj">
+      <Project>{2FD7603A-DA54-3A93-9A8C-4E187710CDE1}</Project>
+      <Name>lib1510</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1511.vcxproj">
+      <Project>{A6FE7BBD-5124-38B6-A0F3-55CCAD23CA99}</Project>
+      <Name>lib1511</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1512.vcxproj">
+      <Project>{5FAB9CE1-4E47-317F-9CF4-7D77C1910BD9}</Project>
+      <Name>lib1512</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1513.vcxproj">
+      <Project>{44DD965B-2162-356B-8FA0-9AEFD02D22FD}</Project>
+      <Name>lib1513</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1514.vcxproj">
+      <Project>{13B09FCD-8401-3C4F-ADCC-D3D0BBC256FD}</Project>
+      <Name>lib1514</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1515.vcxproj">
+      <Project>{08CA1D7F-A382-3086-AF02-1661E1EE13F4}</Project>
+      <Name>lib1515</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1517.vcxproj">
+      <Project>{E512567B-A5D3-3BD8-A6DA-F6F14B1D02FB}</Project>
+      <Name>lib1517</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1518.vcxproj">
+      <Project>{54DE83C3-E9A3-3A17-9C17-C7A6048D8EEA}</Project>
+      <Name>lib1518</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1520.vcxproj">
+      <Project>{553B1E24-7098-3DF1-A768-F8FD4FE100D8}</Project>
+      <Name>lib1520</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1521.vcxproj">
+      <Project>{82D9281E-3C27-3605-B0B7-BA9E7567AA3C}</Project>
+      <Name>lib1521</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1522.vcxproj">
+      <Project>{C1009C86-834D-3E39-8839-1508186686D1}</Project>
+      <Name>lib1522</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1523.vcxproj">
+      <Project>{5A6F5D50-7A3E-30C7-9C63-80592816E11C}</Project>
+      <Name>lib1523</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1525.vcxproj">
+      <Project>{4020109A-05B4-3E96-8508-61F823C87A2A}</Project>
+      <Name>lib1525</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1526.vcxproj">
+      <Project>{D41E299D-80B7-3DCA-AB14-DB25D4FDF280}</Project>
+      <Name>lib1526</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1527.vcxproj">
+      <Project>{92428FC7-E1CA-3787-B4E0-A35275A7A547}</Project>
+      <Name>lib1527</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1528.vcxproj">
+      <Project>{EE27AE34-9065-38EF-B781-4C5B920D6DE7}</Project>
+      <Name>lib1528</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1529.vcxproj">
+      <Project>{3C7F6DE5-C551-3926-9E7F-272FB3033C34}</Project>
+      <Name>lib1529</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1530.vcxproj">
+      <Project>{BEF6A29D-22D7-3071-8E13-EF289B94CA79}</Project>
+      <Name>lib1530</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1531.vcxproj">
+      <Project>{8DBEA969-C05B-3526-B14A-E184545010CE}</Project>
+      <Name>lib1531</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1532.vcxproj">
+      <Project>{4E64B221-1D9D-3840-A9E1-754EEBB07918}</Project>
+      <Name>lib1532</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1533.vcxproj">
+      <Project>{B7237C4D-0E57-3777-B616-72979ED9DC25}</Project>
+      <Name>lib1533</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1534.vcxproj">
+      <Project>{9DC06C86-54C9-3D41-8620-6FF124D84D01}</Project>
+      <Name>lib1534</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1535.vcxproj">
+      <Project>{2A006C68-A2BA-3A67-93A6-2FD9A0E3A226}</Project>
+      <Name>lib1535</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1536.vcxproj">
+      <Project>{F12BA578-364F-3AB8-8BEB-8C780F64B02C}</Project>
+      <Name>lib1536</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1537.vcxproj">
+      <Project>{416BADC0-1E82-322F-B73D-31A8A238DFE0}</Project>
+      <Name>lib1537</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1538.vcxproj">
+      <Project>{F41CA9EB-32D7-3B61-A67A-A694CB49ADBB}</Project>
+      <Name>lib1538</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1539.vcxproj">
+      <Project>{7060F079-EC64-3A7F-88DA-403E9ACF493B}</Project>
+      <Name>lib1539</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1540.vcxproj">
+      <Project>{A790F2E5-3E7F-3CBA-BEF8-98B320F798BB}</Project>
+      <Name>lib1540</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1541.vcxproj">
+      <Project>{6C82815C-B613-3D02-AAC5-F93DA55250C1}</Project>
+      <Name>lib1541</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1542.vcxproj">
+      <Project>{746E0224-C83D-39C2-98A1-9AA570DEF49E}</Project>
+      <Name>lib1542</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1543.vcxproj">
+      <Project>{E1AA441B-17FB-379C-8381-87B68774516A}</Project>
+      <Name>lib1543</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1545.vcxproj">
+      <Project>{703826D4-9109-376A-AE26-42C9DF206748}</Project>
+      <Name>lib1545</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1550.vcxproj">
+      <Project>{1198BFCD-7F74-37CC-95A5-6B51942B112E}</Project>
+      <Name>lib1550</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1551.vcxproj">
+      <Project>{78BCFD9C-FCA0-306D-9CFA-199944AC6937}</Project>
+      <Name>lib1551</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1552.vcxproj">
+      <Project>{6F98EAD9-84F7-3875-A889-B3295E07DE0B}</Project>
+      <Name>lib1552</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1553.vcxproj">
+      <Project>{BB4A9325-0967-3F14-ADB3-9D5AE6152E7E}</Project>
+      <Name>lib1553</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1554.vcxproj">
+      <Project>{0A2254FB-9908-3484-896F-237EF935E7D3}</Project>
+      <Name>lib1554</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1555.vcxproj">
+      <Project>{012F75AA-5826-376B-A0D6-C4DBA1B29CAD}</Project>
+      <Name>lib1555</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1556.vcxproj">
+      <Project>{313F798E-576F-339F-9079-5F74712A3267}</Project>
+      <Name>lib1556</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1557.vcxproj">
+      <Project>{0929DBA3-8094-358C-A9F5-02A69D06B079}</Project>
+      <Name>lib1557</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1558.vcxproj">
+      <Project>{DFDA0520-BF39-365A-AC6E-20554DF4E8AA}</Project>
+      <Name>lib1558</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1559.vcxproj">
+      <Project>{4D865AB2-F225-3B48-8D74-DFEE6E535A48}</Project>
+      <Name>lib1559</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1560.vcxproj">
+      <Project>{C97F03B4-6B31-3C02-B53E-187950CD5938}</Project>
+      <Name>lib1560</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1564.vcxproj">
+      <Project>{E0309640-8B46-33D7-BC33-23FC14F4781F}</Project>
+      <Name>lib1564</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1565.vcxproj">
+      <Project>{FD0A1FCE-7F6D-3AFD-88C8-2D8F11B2ED0E}</Project>
+      <Name>lib1565</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1567.vcxproj">
+      <Project>{3347C702-42A4-3890-9AF4-994DB59E20F9}</Project>
+      <Name>lib1567</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1568.vcxproj">
+      <Project>{F2116BB6-92B5-397C-85F7-AD8F6B835EC4}</Project>
+      <Name>lib1568</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1569.vcxproj">
+      <Project>{502677D2-BC98-3CC1-B6F0-24E110BF5131}</Project>
+      <Name>lib1569</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1591.vcxproj">
+      <Project>{8C0F1E6B-F20D-3561-BA45-C2A27F8238AB}</Project>
+      <Name>lib1591</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1592.vcxproj">
+      <Project>{710D4ECC-D11D-31E6-96D2-C6B606DBE33E}</Project>
+      <Name>lib1592</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1593.vcxproj">
+      <Project>{7B24533E-A422-353B-A481-F1944E2DC336}</Project>
+      <Name>lib1593</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1594.vcxproj">
+      <Project>{09685EBA-70ED-3407-B08B-8DE35BEBD57A}</Project>
+      <Name>lib1594</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1596.vcxproj">
+      <Project>{1C2D7BC7-FA11-3633-8560-CA153B090B3F}</Project>
+      <Name>lib1596</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1597.vcxproj">
+      <Project>{22282102-CF1E-3ABA-A23F-879ADEDFEB38}</Project>
+      <Name>lib1597</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1598.vcxproj">
+      <Project>{0A177066-EEDB-3013-BB51-819CF8C9E62C}</Project>
+      <Name>lib1598</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1662.vcxproj">
+      <Project>{7B738AE1-58CA-394F-9E03-34C55DBAE4E2}</Project>
+      <Name>lib1662</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1900.vcxproj">
+      <Project>{144B3233-CB8C-3BB7-B903-24C419A25356}</Project>
+      <Name>lib1900</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1901.vcxproj">
+      <Project>{55FE4F4E-0FD2-3921-B5E3-1D9769903E3F}</Project>
+      <Name>lib1901</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1903.vcxproj">
+      <Project>{CBD1FB9F-2DF9-3BE8-A97D-6A705BD0BF52}</Project>
+      <Name>lib1903</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1905.vcxproj">
+      <Project>{12D60846-E4AA-3DA6-93F3-DE01EB590371}</Project>
+      <Name>lib1905</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1906.vcxproj">
+      <Project>{9F1CDEA5-5A11-3B73-9509-57C844F40FB9}</Project>
+      <Name>lib1906</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1907.vcxproj">
+      <Project>{3B4140E7-31B0-3A59-A93A-503768E996CD}</Project>
+      <Name>lib1907</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1908.vcxproj">
+      <Project>{D1D5B704-C08F-35ED-AB23-0F9A1F364511}</Project>
+      <Name>lib1908</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1910.vcxproj">
+      <Project>{C4F070EB-0D1C-331A-BD0B-4F7C4A84FDAF}</Project>
+      <Name>lib1910</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1911.vcxproj">
+      <Project>{DD340A3E-E405-34E0-8302-3D5357BA7ECC}</Project>
+      <Name>lib1911</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1912.vcxproj">
+      <Project>{8EDF5F1F-DCD4-3143-8B6F-F4FE3AFC17B4}</Project>
+      <Name>lib1912</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1913.vcxproj">
+      <Project>{1EC5970F-197B-384C-A850-626FCE721233}</Project>
+      <Name>lib1913</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1915.vcxproj">
+      <Project>{B78D4D89-058F-307D-9F5B-25B90110671B}</Project>
+      <Name>lib1915</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1916.vcxproj">
+      <Project>{F2A2A51D-11AD-3CD1-A5D9-1E656230D4CE}</Project>
+      <Name>lib1916</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1917.vcxproj">
+      <Project>{835FF229-980F-3751-AD27-3B6637BF0365}</Project>
+      <Name>lib1917</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1918.vcxproj">
+      <Project>{42C71FDD-8D11-34D4-978D-F91B04487212}</Project>
+      <Name>lib1918</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1919.vcxproj">
+      <Project>{268C556F-B390-33D9-9289-34E2733A8F9E}</Project>
+      <Name>lib1919</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1933.vcxproj">
+      <Project>{197A7750-9F8C-38F7-95EC-900E80199DF3}</Project>
+      <Name>lib1933</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1934.vcxproj">
+      <Project>{56E84859-0F4F-3899-BB88-A64147EEA857}</Project>
+      <Name>lib1934</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1935.vcxproj">
+      <Project>{D76E049E-D311-372D-996F-BFC3105CDD8C}</Project>
+      <Name>lib1935</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1936.vcxproj">
+      <Project>{B2652DD2-7EAF-33AC-ACC4-0F3B85C81A94}</Project>
+      <Name>lib1936</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1937.vcxproj">
+      <Project>{14022272-02DD-39C5-8F65-40C88EBDAD01}</Project>
+      <Name>lib1937</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1938.vcxproj">
+      <Project>{E59A6EC7-24A2-3E83-961E-F3B7BAC30492}</Project>
+      <Name>lib1938</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1939.vcxproj">
+      <Project>{D24D1FB7-AD53-3A3E-A938-C9ADDCF5BDF1}</Project>
+      <Name>lib1939</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1940.vcxproj">
+      <Project>{037D335D-C061-3A7B-9913-BD507556CA53}</Project>
+      <Name>lib1940</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1945.vcxproj">
+      <Project>{4090AC40-1198-375E-9A7A-D12AFC7394EA}</Project>
+      <Name>lib1945</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1946.vcxproj">
+      <Project>{E480DA59-2DA2-36D0-AF87-4B23F1314D4A}</Project>
+      <Name>lib1946</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1947.vcxproj">
+      <Project>{CC47FBE0-BDCE-3992-9527-606DD04F5B10}</Project>
+      <Name>lib1947</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1948.vcxproj">
+      <Project>{63E3251C-4FEF-376B-93C7-3BB0D1B3F926}</Project>
+      <Name>lib1948</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1955.vcxproj">
+      <Project>{192460E1-7C39-3918-B4AA-4E08C727F0D2}</Project>
+      <Name>lib1955</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1956.vcxproj">
+      <Project>{DB82D90A-8773-391B-A78A-CEB14561375F}</Project>
+      <Name>lib1956</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1957.vcxproj">
+      <Project>{32F86040-210F-3344-9822-8E3AA86A8DE4}</Project>
+      <Name>lib1957</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1958.vcxproj">
+      <Project>{922E7264-2EDF-30B3-BB7C-D444598745F3}</Project>
+      <Name>lib1958</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1959.vcxproj">
+      <Project>{B12F0581-832F-3445-9F8D-5EA0C7D175B5}</Project>
+      <Name>lib1959</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1960.vcxproj">
+      <Project>{1D5BE01F-ACEC-3139-B1EB-FCDF24C97E75}</Project>
+      <Name>lib1960</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1964.vcxproj">
+      <Project>{308D240E-D6D7-3E5E-97DC-88D864C90C7A}</Project>
+      <Name>lib1964</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1970.vcxproj">
+      <Project>{F6AA9646-7270-374F-B5D4-DC05CB848A69}</Project>
+      <Name>lib1970</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1971.vcxproj">
+      <Project>{B05135C8-29CE-3B39-9EA9-AF81F0898AB3}</Project>
+      <Name>lib1971</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1972.vcxproj">
+      <Project>{A8A1A347-FE6F-3DE5-A8AB-1A377A35C6B0}</Project>
+      <Name>lib1972</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1973.vcxproj">
+      <Project>{4C6B748C-7F64-3265-99BA-55676254FE02}</Project>
+      <Name>lib1973</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1974.vcxproj">
+      <Project>{6705FE1F-EB88-3E9F-9299-76269002ADAC}</Project>
+      <Name>lib1974</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib1975.vcxproj">
+      <Project>{6701B6A0-4201-33A3-81AE-D20A6A81FFF2}</Project>
+      <Name>lib1975</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib2301.vcxproj">
+      <Project>{682D358F-6DC0-34AD-BA33-2ACB4CD37D12}</Project>
+      <Name>lib2301</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib2302.vcxproj">
+      <Project>{652006FF-E8C2-37E6-90D6-048BD1F69783}</Project>
+      <Name>lib2302</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib2304.vcxproj">
+      <Project>{13FD03A2-E045-35EF-9B6F-1EB52DFDD4C2}</Project>
+      <Name>lib2304</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib2305.vcxproj">
+      <Project>{F753AB37-38BD-3DD1-9A16-FC27ADB484D4}</Project>
+      <Name>lib2305</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib2306.vcxproj">
+      <Project>{D4F23879-EA19-3DFD-A45B-87B853071D8D}</Project>
+      <Name>lib2306</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib2308.vcxproj">
+      <Project>{F8A9A928-F6C5-3C5E-AB4B-A8CD8EBFBA71}</Project>
+      <Name>lib2308</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib2402.vcxproj">
+      <Project>{0A59EF6E-73AA-3573-8083-EABB7B6D9A9D}</Project>
+      <Name>lib2402</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib2404.vcxproj">
+      <Project>{DC37477B-3DE0-389A-9B7A-8C8D5EE9155A}</Project>
+      <Name>lib2404</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib2405.vcxproj">
+      <Project>{5BC45DFE-AE07-3BA1-872A-E8264345F951}</Project>
+      <Name>lib2405</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib2502.vcxproj">
+      <Project>{8542A12D-3719-3F26-A2DD-0BE2FB90444B}</Project>
+      <Name>lib2502</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib3010.vcxproj">
+      <Project>{D8B08A96-07E8-3468-8C12-1C0B4C490C59}</Project>
+      <Name>lib3010</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib3025.vcxproj">
+      <Project>{00A3A99B-D218-3233-940E-A5AF0088C4B3}</Project>
+      <Name>lib3025</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib3026.vcxproj">
+      <Project>{6AD7FFFA-1190-38FE-A5A3-E09426CB6457}</Project>
+      <Name>lib3026</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib3027.vcxproj">
+      <Project>{E77FF4EE-84FA-34D5-B22F-9B4CD026FB73}</Project>
+      <Name>lib3027</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib3100.vcxproj">
+      <Project>{B009C39F-66F4-37E0-8FE1-656014D1885D}</Project>
+      <Name>lib3100</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib3101.vcxproj">
+      <Project>{B4A549D6-F828-3C63-880F-D335C4ED8196}</Project>
+      <Name>lib3101</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib3102.vcxproj">
+      <Project>{BB91F13E-7775-33D1-8B3E-AB71D5117761}</Project>
+      <Name>lib3102</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib3103.vcxproj">
+      <Project>{0A2637FA-8487-343B-AC9C-A05FACE16F98}</Project>
+      <Name>lib3103</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib3207.vcxproj">
+      <Project>{7AEA820B-CDAC-3595-A6DC-C5846790FADE}</Project>
+      <Name>lib3207</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib500.vcxproj">
+      <Project>{5E5AD451-7CFD-3B7C-AC76-A5CB81A2D418}</Project>
+      <Name>lib500</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib501.vcxproj">
+      <Project>{46DC4705-43A7-3634-977D-04090230A5C7}</Project>
+      <Name>lib501</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib502.vcxproj">
+      <Project>{6F568B99-B13E-3F03-A53D-86E89AD6164B}</Project>
+      <Name>lib502</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib503.vcxproj">
+      <Project>{BFF621A9-87AF-3825-8F08-24E1A7B8A348}</Project>
+      <Name>lib503</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib504.vcxproj">
+      <Project>{DA2B5C5B-C26C-33EA-9BDE-57FCA0DE26D3}</Project>
+      <Name>lib504</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib505.vcxproj">
+      <Project>{4491B328-F7EC-3DA4-A8CE-A2F42E49C06A}</Project>
+      <Name>lib505</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib506.vcxproj">
+      <Project>{0DF90FC5-6E51-320E-B721-BBD31B46CEE3}</Project>
+      <Name>lib506</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib507.vcxproj">
+      <Project>{202C137A-9079-30D4-848A-A4DD352C62A8}</Project>
+      <Name>lib507</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib508.vcxproj">
+      <Project>{52F44767-D6FF-328A-9261-6EC4D24B78C3}</Project>
+      <Name>lib508</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib509.vcxproj">
+      <Project>{3A6B73D7-6D8E-34B5-9C6C-EBDB525B587B}</Project>
+      <Name>lib509</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib510.vcxproj">
+      <Project>{4351D927-866A-33C1-900C-75EDA2F3C4C5}</Project>
+      <Name>lib510</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib511.vcxproj">
+      <Project>{4C5D102B-CBFC-326E-B731-77FA69EDEDA0}</Project>
+      <Name>lib511</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib512.vcxproj">
+      <Project>{B6F4FD52-24E2-3A8E-8922-D9CE78489D37}</Project>
+      <Name>lib512</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib513.vcxproj">
+      <Project>{9BAD8CC6-F1A2-33C9-A7B1-7F0C62EEB0A2}</Project>
+      <Name>lib513</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib514.vcxproj">
+      <Project>{D29EB777-C5C1-3F19-BB97-556CA7529EF9}</Project>
+      <Name>lib514</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib515.vcxproj">
+      <Project>{F9F4A193-6313-355A-B898-49444B199D84}</Project>
+      <Name>lib515</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib516.vcxproj">
+      <Project>{9116B364-2E63-3993-9178-16B5E40E885F}</Project>
+      <Name>lib516</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib517.vcxproj">
+      <Project>{224F89F8-3236-3928-9719-CE42B24CEBEA}</Project>
+      <Name>lib517</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib518.vcxproj">
+      <Project>{B87329C7-CB76-37DF-B362-EDC73504DFA5}</Project>
+      <Name>lib518</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib519.vcxproj">
+      <Project>{7ADCE738-483F-31F8-A6D1-B3A1CD738676}</Project>
+      <Name>lib519</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib520.vcxproj">
+      <Project>{C6A9770E-DC8F-3239-998D-5898E98322D8}</Project>
+      <Name>lib520</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib521.vcxproj">
+      <Project>{530313A6-0EE3-386F-B209-221D9289C344}</Project>
+      <Name>lib521</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib523.vcxproj">
+      <Project>{438D4AA4-962D-3C77-BCB7-46DEAE164A80}</Project>
+      <Name>lib523</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib524.vcxproj">
+      <Project>{3EA7D22A-82C6-3568-904C-CF7BD5ED682F}</Project>
+      <Name>lib524</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib525.vcxproj">
+      <Project>{79F28BB1-99D3-339B-9660-1BC1EADD5FC7}</Project>
+      <Name>lib525</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib526.vcxproj">
+      <Project>{71ADE2EC-607D-3663-96B4-50F63C332F6A}</Project>
+      <Name>lib526</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib527.vcxproj">
+      <Project>{2C4413F2-1A30-3054-8198-988BD68D1747}</Project>
+      <Name>lib527</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib529.vcxproj">
+      <Project>{A5515F33-0628-3396-BED7-2F26A9CC4257}</Project>
+      <Name>lib529</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib530.vcxproj">
+      <Project>{AD9E6AF7-8F0D-38AA-9ABC-9D65DCD91DAC}</Project>
+      <Name>lib530</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib532.vcxproj">
+      <Project>{EA3A6921-F066-3907-9AEB-B60234C8E417}</Project>
+      <Name>lib532</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib533.vcxproj">
+      <Project>{DA4B512D-9744-35B6-B3BD-C4E2CAE93D5E}</Project>
+      <Name>lib533</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib536.vcxproj">
+      <Project>{67CE52AB-CE58-3D24-9847-28001AEFBB94}</Project>
+      <Name>lib536</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib537.vcxproj">
+      <Project>{3D25570E-A38A-34EF-BA25-5C099C7CFD29}</Project>
+      <Name>lib537</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib539.vcxproj">
+      <Project>{1EC56D78-354A-3D3D-B4DD-1ACDBA0A9F86}</Project>
+      <Name>lib539</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib540.vcxproj">
+      <Project>{F8FDE664-890C-3597-9A55-9FF70C118C5B}</Project>
+      <Name>lib540</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib541.vcxproj">
+      <Project>{4D883A13-EFDC-3D36-B190-D86543765C7B}</Project>
+      <Name>lib541</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib542.vcxproj">
+      <Project>{2812695B-95FA-3EE6-940E-240A9BA92CAF}</Project>
+      <Name>lib542</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib543.vcxproj">
+      <Project>{99B4101C-5E10-31F2-8EEB-B6F0FFCB645F}</Project>
+      <Name>lib543</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib544.vcxproj">
+      <Project>{E7E9B5F4-08AB-3350-AAD9-9F34BD001A05}</Project>
+      <Name>lib544</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib545.vcxproj">
+      <Project>{19052A80-4077-3A17-9CF0-193BC4D00A68}</Project>
+      <Name>lib545</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib547.vcxproj">
+      <Project>{503A26EE-6CD5-3A9F-B4C2-08C61841E8A1}</Project>
+      <Name>lib547</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib548.vcxproj">
+      <Project>{1710BB06-443A-3474-8141-F76466FD944A}</Project>
+      <Name>lib548</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib549.vcxproj">
+      <Project>{DCF08E74-53CF-3AAE-9F01-6E15321D3063}</Project>
+      <Name>lib549</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib552.vcxproj">
+      <Project>{2F0E532B-CA04-3A94-97F8-58A0999B5731}</Project>
+      <Name>lib552</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib553.vcxproj">
+      <Project>{E92892C4-51C9-302A-A2B3-F78C49A43601}</Project>
+      <Name>lib553</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib554.vcxproj">
+      <Project>{F4990E5B-B022-303B-9144-09BDDB47799C}</Project>
+      <Name>lib554</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib555.vcxproj">
+      <Project>{C99675E5-A99B-38B2-A959-6E245233502A}</Project>
+      <Name>lib555</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib556.vcxproj">
+      <Project>{310B36CC-90BF-3C78-A8BD-E19815A4D907}</Project>
+      <Name>lib556</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib557.vcxproj">
+      <Project>{15C94217-E159-3D35-A4BD-A7F0F416E607}</Project>
+      <Name>lib557</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib558.vcxproj">
+      <Project>{630A254C-1D0F-3EF6-AF2A-9A49FA2AC9BC}</Project>
+      <Name>lib558</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib559.vcxproj">
+      <Project>{E0C77894-8F42-359D-97BC-4972A874D26D}</Project>
+      <Name>lib559</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib560.vcxproj">
+      <Project>{CE9B1B4B-039D-394C-B710-7017983B9271}</Project>
+      <Name>lib560</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib562.vcxproj">
+      <Project>{05689970-D804-3501-94BD-1DD8CA0FEAF1}</Project>
+      <Name>lib562</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib564.vcxproj">
+      <Project>{39562321-15EA-3BE8-9A9B-D785D258C16A}</Project>
+      <Name>lib564</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib565.vcxproj">
+      <Project>{0B31FA37-D514-3742-BDC7-6BB9FFF08E0D}</Project>
+      <Name>lib565</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib566.vcxproj">
+      <Project>{A949034A-BAEC-3D48-A92D-59D0C3063B8D}</Project>
+      <Name>lib566</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib567.vcxproj">
+      <Project>{B4AA656A-B765-345E-953C-34B41DB18DDD}</Project>
+      <Name>lib567</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib568.vcxproj">
+      <Project>{282A6431-EF35-37D4-9AA2-CE1E91FBA49E}</Project>
+      <Name>lib568</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib569.vcxproj">
+      <Project>{534B76AF-EC3F-383E-BA5D-F89999F6A741}</Project>
+      <Name>lib569</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib570.vcxproj">
+      <Project>{3E89FA42-7B50-387D-B077-8B142C153064}</Project>
+      <Name>lib570</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib571.vcxproj">
+      <Project>{84CA8ADA-E47B-35C8-95AD-E45A41F93466}</Project>
+      <Name>lib571</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib572.vcxproj">
+      <Project>{565A0676-5CAB-3770-8F2D-E62A22B96B75}</Project>
+      <Name>lib572</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib573.vcxproj">
+      <Project>{C703E251-D8C1-3F9A-A920-FFF10255A2C6}</Project>
+      <Name>lib573</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib574.vcxproj">
+      <Project>{D1ADD6F0-E5C7-331C-BCA7-FEF4B45FABF8}</Project>
+      <Name>lib574</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib575.vcxproj">
+      <Project>{93416437-5710-3759-95E7-6E4F589563FF}</Project>
+      <Name>lib575</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib576.vcxproj">
+      <Project>{F88DD750-6292-32D4-BC7E-81BE9A211281}</Project>
+      <Name>lib576</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib578.vcxproj">
+      <Project>{F3F3FD6A-BA7E-3D3E-980B-DEBCD7C840B0}</Project>
+      <Name>lib578</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib579.vcxproj">
+      <Project>{A153A2EF-2A58-34FA-A272-9CADAF5CE66F}</Project>
+      <Name>lib579</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib582.vcxproj">
+      <Project>{1A37A6BC-8F8E-37B3-B8CB-995CB1E21FF2}</Project>
+      <Name>lib582</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib583.vcxproj">
+      <Project>{7716F496-70DF-32C3-AB39-B2B34F55D63E}</Project>
+      <Name>lib583</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib584.vcxproj">
+      <Project>{CEAC42ED-56B9-3A3D-9923-5307B8ABD0AF}</Project>
+      <Name>lib584</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib585.vcxproj">
+      <Project>{4DD25654-65F9-363E-9A37-1966904487E7}</Project>
+      <Name>lib585</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib586.vcxproj">
+      <Project>{1B7C8933-27E4-3256-BBB3-9890C2013B42}</Project>
+      <Name>lib586</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib587.vcxproj">
+      <Project>{7C33BF60-82DB-3D26-A14C-B8267C78EDE6}</Project>
+      <Name>lib587</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib589.vcxproj">
+      <Project>{FE4ABB3E-9CD7-3837-A9C9-26FB957FD3DF}</Project>
+      <Name>lib589</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib590.vcxproj">
+      <Project>{157E2469-07A5-3CED-AD6C-88D1607FD9AA}</Project>
+      <Name>lib590</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib591.vcxproj">
+      <Project>{5FD14120-70F2-367C-B8EB-F81B168F985D}</Project>
+      <Name>lib591</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib597.vcxproj">
+      <Project>{FBD70785-3547-3421-88BF-88465F525FB4}</Project>
+      <Name>lib597</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib598.vcxproj">
+      <Project>{9B3D78C8-3091-3184-939D-F31154F6FE65}</Project>
+      <Name>lib598</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib599.vcxproj">
+      <Project>{03207B4D-B14B-3280-9375-E1DE9F3323C8}</Project>
+      <Name>lib599</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib643.vcxproj">
+      <Project>{33BF8924-DA67-377F-95F9-B306A5A921C6}</Project>
+      <Name>lib643</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib645.vcxproj">
+      <Project>{1E66D0E3-9A5F-3CAC-8116-0EB3F52549EE}</Project>
+      <Name>lib645</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib650.vcxproj">
+      <Project>{A5B71875-033F-38D1-B611-D1A4BD161BB9}</Project>
+      <Name>lib650</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib651.vcxproj">
+      <Project>{0B860BBE-AB3F-35A4-AB50-9483EB471F6F}</Project>
+      <Name>lib651</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib652.vcxproj">
+      <Project>{2D4CD129-15BB-30D5-950A-79189BD4553D}</Project>
+      <Name>lib652</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib653.vcxproj">
+      <Project>{B16603CB-3BB3-358B-8405-45397ABE0E16}</Project>
+      <Name>lib653</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib654.vcxproj">
+      <Project>{71D5E224-7E8C-36B3-A592-1D2A2E95367D}</Project>
+      <Name>lib654</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib655.vcxproj">
+      <Project>{B765A61F-0C95-3AE7-98E7-B1E677D50FF0}</Project>
+      <Name>lib655</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib658.vcxproj">
+      <Project>{C022346B-8441-3A75-8796-0C8A1D4856AF}</Project>
+      <Name>lib658</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib659.vcxproj">
+      <Project>{569B7908-E4DE-3C6C-BACD-DE96B5BF0B47}</Project>
+      <Name>lib659</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib661.vcxproj">
+      <Project>{BD130DEF-E9C2-39C7-AF5C-A16AEE323BD2}</Project>
+      <Name>lib661</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib666.vcxproj">
+      <Project>{3F783C5A-EA00-3F16-B56D-872C03E17B01}</Project>
+      <Name>lib666</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib667.vcxproj">
+      <Project>{30EE656B-349A-3556-AD37-16E3A0CB33AE}</Project>
+      <Name>lib667</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib668.vcxproj">
+      <Project>{8CCA9394-4F71-3E4C-9D3D-CAAE79332412}</Project>
+      <Name>lib668</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib670.vcxproj">
+      <Project>{664B4A81-4470-3881-B9AF-AE4E01B991AA}</Project>
+      <Name>lib670</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib671.vcxproj">
+      <Project>{2D50BC8D-A4D7-391F-8144-3DE1A2BEB2C2}</Project>
+      <Name>lib671</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib672.vcxproj">
+      <Project>{EAB17A97-DDA8-3879-9CA2-47C6A4198CFB}</Project>
+      <Name>lib672</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib673.vcxproj">
+      <Project>{8352F8CF-32E1-3056-B583-E5B71668267A}</Project>
+      <Name>lib673</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib674.vcxproj">
+      <Project>{56B720BC-DF57-311A-9D86-1017E7B640CA}</Project>
+      <Name>lib674</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib676.vcxproj">
+      <Project>{6E1F8BD2-37AE-3AEE-9065-3AB2DD15F513}</Project>
+      <Name>lib676</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib677.vcxproj">
+      <Project>{DF6C824A-86B8-3FF4-A6B1-C1734D45B5BE}</Project>
+      <Name>lib677</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\lib678.vcxproj">
+      <Project>{E56070A5-CF50-30FB-9E7C-D74484CB2AEA}</Project>
+      <Name>lib678</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\libauthretry.vcxproj">
+      <Project>{1DDF6137-7DBE-3BA0-A758-81157A660548}</Project>
+      <Name>libauthretry</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\libntlmconnect.vcxproj">
+      <Project>{F68E3443-6543-380C-83EC-2497987C86FA}</Project>
+      <Name>libntlmconnect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\libtest\libprereq.vcxproj">
+      <Project>{8AE99474-E4C0-3E94-9F69-D2DD6888548D}</Project>
+      <Name>libprereq</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\server\mqttd.vcxproj">
+      <Project>{CC2C7061-F6D0-31CC-9557-66C6465C7F8D}</Project>
+      <Name>mqttd</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\server\resolve.vcxproj">
+      <Project>{3A2E3A7B-9F7B-3A5E-81BC-0C698DFA0571}</Project>
+      <Name>resolve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\server\rtspd.vcxproj">
+      <Project>{3346D02B-625A-3313-A272-2F0176DB51FC}</Project>
+      <Name>rtspd</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\server\sockfilt.vcxproj">
+      <Project>{B8542E07-D21B-36E6-9516-641ABC49B5C9}</Project>
+      <Name>sockfilt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\server\socksd.vcxproj">
+      <Project>{F4839EDB-23B7-37A0-9764-F9FB7FC0732E}</Project>
+      <Name>socksd</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\server\sws.vcxproj">
+      <Project>{741E1DE6-7089-34E1-9C8D-F287202F5D82}</Project>
+      <Name>sws</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\server\tftpd.vcxproj">
+      <Project>{D9FC1FD9-75B4-3A3D-852D-D9AA9BCC162E}</Project>
+      <Name>tftpd</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1300.vcxproj">
+      <Project>{6752EAB4-98A6-3C04-8FE0-E692EF775052}</Project>
+      <Name>unit1300</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1302.vcxproj">
+      <Project>{E8E02EF7-F289-34DE-9F96-BC100EF11AC1}</Project>
+      <Name>unit1302</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1303.vcxproj">
+      <Project>{0F1737F8-64B6-3BAA-AEAB-9A9E7EB647F5}</Project>
+      <Name>unit1303</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1304.vcxproj">
+      <Project>{BF5FE98D-209C-3245-A4ED-6D04E6088438}</Project>
+      <Name>unit1304</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1305.vcxproj">
+      <Project>{B9C98EE0-A4D9-3BE3-BF9D-1B380FB5FC20}</Project>
+      <Name>unit1305</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1307.vcxproj">
+      <Project>{B1E32265-6EF1-33A7-8EB1-DAC6BDA87768}</Project>
+      <Name>unit1307</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1308.vcxproj">
+      <Project>{D285CE92-2109-329D-BF88-65B601B81A5E}</Project>
+      <Name>unit1308</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1309.vcxproj">
+      <Project>{9D726ABF-460E-37E2-ABDD-AF8C3EB0FF60}</Project>
+      <Name>unit1309</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1323.vcxproj">
+      <Project>{E0CB0C95-CB09-338E-A77A-4886678ED5D9}</Project>
+      <Name>unit1323</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1330.vcxproj">
+      <Project>{869D6FD1-AB89-33DF-92EE-6AA5C1671086}</Project>
+      <Name>unit1330</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1394.vcxproj">
+      <Project>{2259E1EE-ECFF-3DAC-8285-4AD516436D02}</Project>
+      <Name>unit1394</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1395.vcxproj">
+      <Project>{6D42DF34-191E-31A5-A204-4625C5682C47}</Project>
+      <Name>unit1395</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1396.vcxproj">
+      <Project>{D4ADD4B2-3DD7-311B-BE08-E2212A584A9B}</Project>
+      <Name>unit1396</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1397.vcxproj">
+      <Project>{9A2E0375-66DB-30E0-8B21-75679741FF1D}</Project>
+      <Name>unit1397</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1398.vcxproj">
+      <Project>{502E3C94-6C63-3004-9920-E3482011ABE9}</Project>
+      <Name>unit1398</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1399.vcxproj">
+      <Project>{3412406D-C310-3760-828C-99E7F56AFD85}</Project>
+      <Name>unit1399</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1600.vcxproj">
+      <Project>{7EA34FE3-85C9-3D77-BA34-422294C87890}</Project>
+      <Name>unit1600</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1601.vcxproj">
+      <Project>{FD8406FF-BFB2-33E4-BEBB-EBA2CF11F619}</Project>
+      <Name>unit1601</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1602.vcxproj">
+      <Project>{B4600028-3FF4-30FC-BE10-266C78A575DE}</Project>
+      <Name>unit1602</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1603.vcxproj">
+      <Project>{D261F45A-12FA-3885-9D7B-384AA7177B18}</Project>
+      <Name>unit1603</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1604.vcxproj">
+      <Project>{4CF42646-466E-3556-9D3A-6762AD525E53}</Project>
+      <Name>unit1604</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1605.vcxproj">
+      <Project>{632172F2-2731-354E-A473-077BF5C5F581}</Project>
+      <Name>unit1605</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1606.vcxproj">
+      <Project>{4518AE4A-7532-3EBB-B9DF-9ACF5A3D8B2D}</Project>
+      <Name>unit1606</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1607.vcxproj">
+      <Project>{5E6892B3-5A86-3FDF-AF2B-EAEC8E922799}</Project>
+      <Name>unit1607</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1608.vcxproj">
+      <Project>{5CEA3EE7-E950-30DD-A8D9-4E515B719A06}</Project>
+      <Name>unit1608</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1609.vcxproj">
+      <Project>{3E701924-C17A-3E57-8457-F1EEBBA86DE1}</Project>
+      <Name>unit1609</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1610.vcxproj">
+      <Project>{C813F0A7-3262-32B4-95DF-19AAFCDAEC91}</Project>
+      <Name>unit1610</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1611.vcxproj">
+      <Project>{332529D4-2D06-3DB2-9750-87EBBFFC2B14}</Project>
+      <Name>unit1611</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1612.vcxproj">
+      <Project>{6209E3AF-A29B-3437-8D5E-43E45D7BD9B5}</Project>
+      <Name>unit1612</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1614.vcxproj">
+      <Project>{ED4E725A-0E17-3279-AD2C-B66BDCF885F9}</Project>
+      <Name>unit1614</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1615.vcxproj">
+      <Project>{A67CFAE5-F956-3878-8039-00F1E1A8D7AD}</Project>
+      <Name>unit1615</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1616.vcxproj">
+      <Project>{66BB6A11-E0AE-3911-A00B-92BF36B39FA5}</Project>
+      <Name>unit1616</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1620.vcxproj">
+      <Project>{ABAEFF27-C7D7-3F75-876A-F52F29B73EFB}</Project>
+      <Name>unit1620</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1621.vcxproj">
+      <Project>{66EC4268-2C3E-3D70-B55B-2563D1DB8835}</Project>
+      <Name>unit1621</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1650.vcxproj">
+      <Project>{8A43E3B0-C332-356C-BB71-2A5DE2CEE051}</Project>
+      <Name>unit1650</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1651.vcxproj">
+      <Project>{57DB6898-95B4-3450-BBBC-8C44563E0E15}</Project>
+      <Name>unit1651</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1652.vcxproj">
+      <Project>{AE046F77-2C47-3724-BE9A-0E223E1CB4DF}</Project>
+      <Name>unit1652</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1653.vcxproj">
+      <Project>{F18B237D-2D85-39E0-923C-F530670779BA}</Project>
+      <Name>unit1653</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1654.vcxproj">
+      <Project>{4913177C-BA3D-366D-87C0-7F8280178800}</Project>
+      <Name>unit1654</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1655.vcxproj">
+      <Project>{4FAAB349-3F56-3757-88B6-3A309F4DED66}</Project>
+      <Name>unit1655</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1656.vcxproj">
+      <Project>{378C332B-1ADF-3E0F-8D9C-201E577A12EF}</Project>
+      <Name>unit1656</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1660.vcxproj">
+      <Project>{471B190A-2047-3DF5-83E7-95091FE3FBF2}</Project>
+      <Name>unit1660</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1661.vcxproj">
+      <Project>{70AF77F9-7C1F-3E73-9960-E2882B4E644C}</Project>
+      <Name>unit1661</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit1663.vcxproj">
+      <Project>{23C1A772-725E-3E07-8E91-BDD931BCA351}</Project>
+      <Name>unit1663</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit2600.vcxproj">
+      <Project>{005F0229-E28C-3230-A24B-A965DFA73D35}</Project>
+      <Name>unit2600</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit2601.vcxproj">
+      <Project>{3997488E-A850-3546-B48D-91C8A6498791}</Project>
+      <Name>unit2601</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit2602.vcxproj">
+      <Project>{26C5870F-F09E-357F-8D4D-8E435083F5C8}</Project>
+      <Name>unit2602</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit2603.vcxproj">
+      <Project>{D6D05C79-55BB-3E6E-922F-B7B97CBADD74}</Project>
+      <Name>unit2603</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit2604.vcxproj">
+      <Project>{CDCEEED3-CE92-3F47-AC61-8B20A972079A}</Project>
+      <Name>unit2604</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit3200.vcxproj">
+      <Project>{ECE09917-AB3F-3239-A8FB-845474B5A035}</Project>
+      <Name>unit3200</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\tests\unit\unit3205.vcxproj">
+      <Project>{E4CE144A-9731-3BAD-9CC4-5D5D5BDD0299}</Project>
+      <Name>unit3205</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

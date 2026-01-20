@@ -1,0 +1,10 @@
+^C:\USERS\626\DOCUMENTS\GITHUB\SCREEN-MONITOR-AI\SCREEN_MONITOR\BUILD\CMAKEFILES\605DC0941CEA9294822EA879A3C4D5B3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/ScreenMonitor.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

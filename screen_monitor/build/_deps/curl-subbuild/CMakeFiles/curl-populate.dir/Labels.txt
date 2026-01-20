@@ -1,0 +1,14 @@
+# Target labels
+ curl-populate
+# Source files and their labels
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-subbuild/CMakeFiles/curl-populate
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-subbuild/CMakeFiles/77c1eba90c31bd464265f28e7cfeba8c/curl-populate.rule
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-subbuild/CMakeFiles/d31ee1dca64e329d504d8ac1c2beb681/curl-populate-complete.rule
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-subbuild/CMakeFiles/8bf8d3a9c0bbf56e3f2ec04028493e9c/curl-populate-build.rule
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-subbuild/CMakeFiles/8bf8d3a9c0bbf56e3f2ec04028493e9c/curl-populate-configure.rule
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-subbuild/CMakeFiles/8bf8d3a9c0bbf56e3f2ec04028493e9c/curl-populate-download.rule
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-subbuild/CMakeFiles/8bf8d3a9c0bbf56e3f2ec04028493e9c/curl-populate-install.rule
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-subbuild/CMakeFiles/8bf8d3a9c0bbf56e3f2ec04028493e9c/curl-populate-mkdir.rule
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-subbuild/CMakeFiles/8bf8d3a9c0bbf56e3f2ec04028493e9c/curl-populate-patch.rule
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-subbuild/CMakeFiles/8bf8d3a9c0bbf56e3f2ec04028493e9c/curl-populate-test.rule
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-subbuild/CMakeFiles/8bf8d3a9c0bbf56e3f2ec04028493e9c/curl-populate-update.rule

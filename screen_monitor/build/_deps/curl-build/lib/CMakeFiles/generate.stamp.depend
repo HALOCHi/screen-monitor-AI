@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/lib/Makefile.inc.cmake
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/lib/CMakeLists.txt
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/lib/Makefile.inc
+C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/lib/curl_config.h.cmake

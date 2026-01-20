@@ -1,7 +1,20 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/alex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/GitHub/screen-monitor-AI/screen_monitor/build/cmake_install.cmake"
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/docs/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/docs/libcurl/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/docs/libcurl/opts/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/lib/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/docs/examples/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/http/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/http/clients/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/server/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/libtest/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/unit/cmake_install.cmake",
+		"C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/tests/certs/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

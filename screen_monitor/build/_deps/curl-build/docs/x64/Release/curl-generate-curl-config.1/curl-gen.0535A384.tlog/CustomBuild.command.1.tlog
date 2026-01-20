@@ -1,0 +1,32 @@
+^C:\USERS\626\DOCUMENTS\GITHUB\SCREEN-MONITOR-AI\SCREEN_MONITOR\BUILD\CMAKEFILES\AE38402C8BF3BF7E2467F916814246B0\CURL-CONFIG.1.RULE
+setlocal
+cd C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\docs
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\msys64\usr\bin\perl.exe C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-src/scripts/cd2nroff curl-config.md > C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/docs/curl-config.1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\626\DOCUMENTS\GITHUB\SCREEN-MONITOR-AI\SCREEN_MONITOR\BUILD\CMAKEFILES\3C1187F094577274EB321479BCD188FC\CURL-GENERATE-CURL-CONFIG.1.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\626\DOCUMENTS\GITHUB\SCREEN-MONITOR-AI\SCREEN_MONITOR\BUILD\_DEPS\CURL-SRC\DOCS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor -BC:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build --check-stamp-file C:/Users/626/Documents/GitHub/screen-monitor-AI/screen_monitor/build/_deps/curl-build/docs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

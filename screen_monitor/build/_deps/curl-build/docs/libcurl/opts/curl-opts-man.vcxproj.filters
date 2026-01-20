@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\CMakeFiles\4044d3b57f43de150433ef203b8e9043\CURLINFO_ACTIVESOCKET.3.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\CMakeFiles\4044d3b57f43de150433ef203b8e9043\CURLOPT_ISSUERCERT.3.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\CMakeFiles\4044d3b57f43de150433ef203b8e9043\CURLSHOPT_SHARE.3.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\CMakeFiles\67e181b75b9334b5d7cb8c1807c21c40\curl-opts-man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-src\docs\libcurl\opts\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\626\Documents\GitHub\screen-monitor-AI\screen_monitor\build\_deps\curl-build\docs\libcurl\opts\CMakeFiles\curl-opts-man" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{41536796-8A98-346C-8E55-F5651388D69D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

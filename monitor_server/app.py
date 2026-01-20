@@ -76,7 +76,6 @@ def analyze_screenshot_task(log_id, filepath):
     "Example: [Работа] Пользователь пишет код в редакторе VS Code."
             )
             
-            
             res = ollama.chat(model='llava', messages=[{
                 'role': 'user',
                 'content': prompt,
@@ -90,7 +89,6 @@ def analyze_screenshot_task(log_id, filepath):
 
 
 
-# --- МАРШРУТЫ FLASK ---
 @app.route('/upload', methods=['POST'])
 def upload():
     file = request.files.get('file')
@@ -110,7 +108,6 @@ def upload():
     
     return jsonify({"status": "ok", "id": new_log.id}), 200
 
-# ЭНДПОИНТ ДЛЯ ФРОНТЕНДА (API)
 @app.route('/api/logs/<username>', methods=['GET'])
 def get_logs(username):
     logs = ActivityLog.query.filter_by(username=username).order_by(ActivityLog.timestamp.desc()).all()

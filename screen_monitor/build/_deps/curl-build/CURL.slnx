@@ -1,0 +1,2214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<BuildType Name="MinSizeRel"/>
+		<BuildType Name="RelWithDebInfo"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="ALL_BUILD.vcxproj" Id="86b2afb7-ccf9-32b7-9d5d-e3da5273e759">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="docs/curl-generate-curl-config.1.vcxproj"/>
+		<BuildDependency Project="docs/curl-generate-mk-ca-bundle.1.vcxproj"/>
+		<BuildDependency Project="docs/libcurl/curl-man.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_object.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="INSTALL.vcxproj" Id="ae7955a2-c291-39b4-b763-b71bb8b57c68">
+		<BuildDependency Project="ALL_BUILD.vcxproj"/>
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="PACKAGE.vcxproj" Id="7de09afd-c1e0-3564-8afb-540c89f01468">
+		<BuildDependency Project="ALL_BUILD.vcxproj"/>
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="../../ZERO_CHECK.vcxproj" Id="5dd725bf-0781-322b-aa73-56231bd065e8"/>
+	<Project Path="docs/examples/curl-example-10-at-a-time.vcxproj" Id="2ef0b1a6-835e-35b1-9365-0819836147e2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-address-scope.vcxproj" Id="eaa587b0-e881-3c3e-b123-8c488442fdf5">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-altsvc.vcxproj" Id="f5e191a5-dc94-3cbd-bc10-e9b56004743e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-anyauthput.vcxproj" Id="85fe7dc1-d749-38ba-abf3-2ae60d94204d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-certinfo.vcxproj" Id="c6953896-e0e3-3b87-a73a-23c0a400f9c9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-chkspeed.vcxproj" Id="829b5221-d485-32f7-baf6-196546daec58">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-connect-to.vcxproj" Id="ec0a1cce-5fe4-3043-a36b-7939a81dc504">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-cookie_interface.vcxproj" Id="90e200ac-5765-3e62-9f41-75e0bdc44755">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-debug.vcxproj" Id="1fb1f9d3-fc6e-3314-a2c1-c61f08413917">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-default-scheme.vcxproj" Id="3c7e785e-d7ff-3883-a437-d7c0aba1a6b5">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-externalsocket.vcxproj" Id="65dda6b3-6dd3-3abb-8a3c-0122c0882be1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-fileupload.vcxproj" Id="a75f5e36-682c-3098-9ef5-83fc4ab3692c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-ftp-wildcard.vcxproj" Id="369bde02-0138-3231-9df6-8a48d9db085c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-ftpget.vcxproj" Id="702f03c0-7edf-3bc6-adc8-e51b56f7c5de">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-ftpgetinfo.vcxproj" Id="735019aa-7b6c-3356-a354-4a4fd6a97bd5">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-ftpgetresp.vcxproj" Id="373d88a7-f39d-3ef5-ad0b-7d4238052857">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-ftpsget.vcxproj" Id="4dbaa1b3-5cce-35e0-a056-29e5d896a168">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-ftpupload.vcxproj" Id="e8c121a5-60f4-3487-875a-3dd778cf6d1d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-ftpuploadfrommem.vcxproj" Id="95997a3d-aea4-39b0-a669-1630bcc30910">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-ftpuploadresume.vcxproj" Id="96e7e0f4-3062-357c-b6c4-cf744da286a7">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-getinfo.vcxproj" Id="87ebae46-304f-35bf-b997-d34eb456bb14">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-getinmemory.vcxproj" Id="498fba68-0a44-31be-945e-53f2420f3b0a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-getredirect.vcxproj" Id="faa98dc5-4ee6-354f-ae4c-2b9fc00d90e2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-getreferrer.vcxproj" Id="39aa8154-7918-3ff2-b1e6-cb9aeb843fe4">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-headerapi.vcxproj" Id="ecfb0dea-b8cd-3394-84f2-3e399f94f99a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-hsts-preload.vcxproj" Id="9cc87c2d-ae0f-3c69-a300-4748124d81de">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-http-options.vcxproj" Id="52e94bf7-ee24-3d40-9c6f-2c891308f465">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-http-post.vcxproj" Id="b8ed6d90-8159-3a0e-ba00-b8309b32b8ad">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-http2-download.vcxproj" Id="917528e9-7bc1-3633-9940-99cfc2d41fb8">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-http2-pushinmemory.vcxproj" Id="c32d1f34-1dbc-3297-bd4e-db63a9016255">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-http2-serverpush.vcxproj" Id="c977883d-fa91-372b-9da1-b7c387bed091">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-http2-upload.vcxproj" Id="1ac51883-7f3c-390e-a9b7-827e68ed3056">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-http3.vcxproj" Id="b9edf78f-c3e2-3f29-828f-26e24df941a9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-http3-present.vcxproj" Id="d61c8c00-483d-3783-9e5a-b3e31e2826e1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-httpcustomheader.vcxproj" Id="dba0c6b0-4184-36e0-baef-8a6fcc105279">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-httpput.vcxproj" Id="cb0ce3d7-57f0-3af2-9c86-6bc467a2d56b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-httpput-postfields.vcxproj" Id="caaa2e83-84be-3d66-b9fd-0c8b3964d66c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-https.vcxproj" Id="43897705-4e88-33a5-bbf7-23b7d05e1890">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-append.vcxproj" Id="35147baa-ddeb-3726-a357-b3a8b1d59ee6">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-authzid.vcxproj" Id="15856a6e-5c7f-3119-a1a0-4bb730bc7661">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-copy.vcxproj" Id="dbac195f-a87a-32f5-ba45-99e6bd57379a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-create.vcxproj" Id="f09b0311-a8ec-3581-a8d5-73df5bd3e141">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-delete.vcxproj" Id="b084df79-646e-3fbc-b3c7-5cd5d77b08cb">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-examine.vcxproj" Id="0938f1ff-2387-31d2-970e-9f95f671b2e3">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-fetch.vcxproj" Id="6df04127-0bb3-3da8-9f76-a56729bb5158">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-list.vcxproj" Id="9e041584-88b8-3a0f-8d4f-39bbaaf1807f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-lsub.vcxproj" Id="8d54ad34-9e3f-3d20-a2a9-4e30b1ae0acb">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-multi.vcxproj" Id="2ca90c09-e5da-3fb4-ba0c-e07842e6401b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-noop.vcxproj" Id="6382f7b7-f543-38eb-99c3-d1708580f36c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-search.vcxproj" Id="a6cb11fc-46ab-31ac-a493-d8b02f9c1d29">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-ssl.vcxproj" Id="afea4aec-dd0b-3b51-888a-57b80f986cbb">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-store.vcxproj" Id="e912f72f-9e39-3a20-9915-3cd4e4c4dac1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-imap-tls.vcxproj" Id="3639959e-79a6-37f3-9e5e-611e6187a1fb">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-interface.vcxproj" Id="5ed7cef7-774a-35af-a8c5-ad2e992c249a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-ipv6.vcxproj" Id="60f7559a-2ef8-3eb2-b75d-509aafbc05ee">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-keepalive.vcxproj" Id="3dde6ff4-724f-3224-bfa1-cf23ccccc146">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-localport.vcxproj" Id="70954ed1-e019-37df-85c0-1670606bcd5f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-maxconnects.vcxproj" Id="0ec40120-31b3-3823-aa99-ac01a61d9ef8">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-multi-app.vcxproj" Id="cc9f5f81-d7f0-3a14-871e-332a1d84c002">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-multi-debugcallback.vcxproj" Id="7c27f3a0-7f55-31df-a653-8bc15951e3ee">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-multi-double.vcxproj" Id="4e9409a7-3436-3645-8f79-42e8cebcd67a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-multi-formadd.vcxproj" Id="0c6dc411-3b0c-38bf-b21b-a34ea9b549dd">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-multi-legacy.vcxproj" Id="325dd4df-00ea-33d6-ae51-8679447df5a1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-multi-post.vcxproj" Id="7c8c1537-01ab-3541-84d9-314605dcb917">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-multi-single.vcxproj" Id="4439b33e-6748-31b7-9e04-86bcf03f6fd8">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-netrc.vcxproj" Id="c0b48846-7083-3d00-9d53-4b30dd80ae38">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-parseurl.vcxproj" Id="b3ec4f15-ea5e-3151-a191-3d536bcad79d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-persistent.vcxproj" Id="11453593-fa35-3754-a194-ea68b1896781">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-pop3-authzid.vcxproj" Id="03083f08-ba95-336c-a641-3b3dcfcd9201">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-pop3-dele.vcxproj" Id="4a0247cc-574f-392f-ab2e-b86bf4033063">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-pop3-list.vcxproj" Id="8360eec0-9a13-3754-b260-7eaac8c9e8ee">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-pop3-multi.vcxproj" Id="bb7c9297-591b-3196-9b96-6c99b129bb84">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-pop3-noop.vcxproj" Id="cd9448cb-80eb-3be9-9bda-7d4c6fad7575">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-pop3-retr.vcxproj" Id="69133715-d74c-3778-9b98-49ca9be3901b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-pop3-ssl.vcxproj" Id="0600bf1b-578a-31e3-9062-efade83c7a27">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-pop3-stat.vcxproj" Id="a11cd3bb-96c3-3be4-8062-bb477ffbef50">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-pop3-tls.vcxproj" Id="e57d5463-7e26-31f5-81b9-2e90cd1128c1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-pop3-top.vcxproj" Id="26fdc2a0-1bbb-36bd-9ddd-ce3dea05149e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-pop3-uidl.vcxproj" Id="92ff1d6c-b265-3a11-9ebb-4ad4b5e6169a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-post-callback.vcxproj" Id="804720c7-6ac5-338e-a0fb-e1500b4a3f46">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-postinmemory.vcxproj" Id="f13df1a4-b240-34f1-a3f9-5c798d137635">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-postit2.vcxproj" Id="96a7f9b3-4a43-38ca-8bed-e6825f77f8aa">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-postit2-formadd.vcxproj" Id="0dc408d0-8479-3c8d-8246-479a60ed3fca">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-progressfunc.vcxproj" Id="0bfa0120-786f-3454-a734-7c287f4467fc">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-protofeats.vcxproj" Id="33863688-1f04-357d-89e8-cf4ccd22ef52">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-range.vcxproj" Id="f3890a5a-0ac9-3bbe-ada8-4491c66414a3">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-resolve.vcxproj" Id="0fd47f81-616c-3aa9-bdf3-91f44c0c150c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-rtsp-options.vcxproj" Id="b023f4a3-1153-3e39-89b1-af197b668f4b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-sendrecv.vcxproj" Id="91a14f2e-8556-3153-97d9-ecc952a78d0a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-sepheaders.vcxproj" Id="49361e8f-3433-3df6-9c5e-05ad337fd310">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-sftpget.vcxproj" Id="4fd1824c-3b60-30ef-a748-57dbdc99ba5e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-sftpuploadresume.vcxproj" Id="5d13ae5b-d575-3206-9451-5ad2df26e5be">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-shared-connection-cache.vcxproj" Id="e173683f-3a32-3952-9498-2704637461d6">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-simple.vcxproj" Id="e1b9f3f1-d9d2-3601-9a37-35ab47ec3a2d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-simplepost.vcxproj" Id="140d709f-78c3-338c-90d2-9840714a7d2b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-simplessl.vcxproj" Id="518b4619-7cda-3c24-abc1-7c310f9f4855">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-smtp-authzid.vcxproj" Id="f99fda7f-f5ca-381b-8c32-51790f4839eb">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-smtp-expn.vcxproj" Id="52236817-b18b-3bc0-93ab-d2c7eb0d3a77">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-smtp-mail.vcxproj" Id="e021000d-b422-3c84-b4d6-5c89bc7469f8">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-smtp-mime.vcxproj" Id="13f4e266-73f6-3558-9a0e-ec19395eb32f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-smtp-multi.vcxproj" Id="fb89eeae-921f-3f2d-b10e-99f20ddfe92f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-smtp-ssl.vcxproj" Id="7631f0d1-386f-3e36-bdca-a83b4605c24b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-smtp-tls.vcxproj" Id="79f58015-ba4d-3687-b086-a44874306ac5">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-smtp-vrfy.vcxproj" Id="91921666-afc3-31da-8851-480001bec446">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-sslbackend.vcxproj" Id="965d691b-fb34-3f87-b26f-8a483cde9be7">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-unixsocket.vcxproj" Id="1ff3169c-a85e-36da-83be-bfabd44ad09f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-url2file.vcxproj" Id="b9e58256-f65b-333e-a1ca-d0a06ec4e044">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-urlapi.vcxproj" Id="3bf7c799-c14d-30a0-9762-3948e3631bf3">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-websocket.vcxproj" Id="b559f67f-ac41-3195-9f6e-d15b2702d187">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-example-websocket-cb.vcxproj" Id="b5d3718a-be54-32be-b9b1-1f72e2668bda">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="docs/examples/curl-examples.vcxproj" Id="5c6a5f2e-47ed-37ad-b05f-4fd70a02f118">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-10-at-a-time.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-address-scope.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-altsvc.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-anyauthput.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-certinfo.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-chkspeed.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-connect-to.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-cookie_interface.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-debug.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-default-scheme.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-externalsocket.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-fileupload.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-ftp-wildcard.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-ftpget.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-ftpgetinfo.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-ftpgetresp.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-ftpsget.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-ftpupload.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-ftpuploadfrommem.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-ftpuploadresume.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-getinfo.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-getinmemory.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-getredirect.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-getreferrer.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-headerapi.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-hsts-preload.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-http-options.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-http-post.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-http2-download.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-http2-pushinmemory.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-http2-serverpush.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-http2-upload.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-http3.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-http3-present.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-httpcustomheader.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-httpput.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-httpput-postfields.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-https.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-append.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-authzid.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-copy.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-create.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-delete.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-examine.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-fetch.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-list.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-lsub.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-multi.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-noop.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-search.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-ssl.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-store.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-imap-tls.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-interface.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-ipv6.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-keepalive.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-localport.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-maxconnects.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-multi-app.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-multi-debugcallback.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-multi-double.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-multi-formadd.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-multi-legacy.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-multi-post.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-multi-single.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-netrc.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-parseurl.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-persistent.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-pop3-authzid.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-pop3-dele.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-pop3-list.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-pop3-multi.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-pop3-noop.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-pop3-retr.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-pop3-ssl.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-pop3-stat.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-pop3-tls.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-pop3-top.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-pop3-uidl.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-post-callback.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-postinmemory.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-postit2.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-postit2-formadd.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-progressfunc.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-protofeats.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-range.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-resolve.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-rtsp-options.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-sendrecv.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-sepheaders.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-sftpget.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-sftpuploadresume.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-shared-connection-cache.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-simple.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-simplepost.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-simplessl.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-smtp-authzid.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-smtp-expn.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-smtp-mail.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-smtp-mime.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-smtp-multi.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-smtp-ssl.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-smtp-tls.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-smtp-vrfy.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-sslbackend.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-unixsocket.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-url2file.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-urlapi.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-websocket.vcxproj"/>
+		<BuildDependency Project="docs/examples/curl-example-websocket-cb.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="docs/curl-generate-curl-config.1.vcxproj" Id="0535a384-b5a5-362b-9a14-5d26e2de63f1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="docs/curl-generate-mk-ca-bundle.1.vcxproj" Id="60df219f-f3f3-394e-8c9b-f503d1edabde">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="docs/libcurl/curl-man.vcxproj" Id="0ca2abfc-3e32-3117-99b9-9789b5fa102e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="docs/libcurl/opts/curl-opts-man.vcxproj"/>
+	</Project>
+	<Project Path="docs/libcurl/opts/curl-opts-man.vcxproj" Id="727952b1-9eba-3176-aff9-ee319431c2a1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="tests/curl-pytest.vcxproj" Id="25518da4-71da-34a0-aa10-8e0faae9dce4">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/test-http-clients.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="tests/curl-pytest-ci.vcxproj" Id="e8116abb-bc7b-3466-afd1-a827de3909e6">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/test-http-clients.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="curl_uninstall.vcxproj" Id="35cb7d0d-01df-3390-a876-d11a9226e941">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="tests/http/clients/curlt-client-h2-pausing.vcxproj" Id="4442336a-6afc-3e90-bd5c-706ca094b8f0">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/http/clients/curlt-client-h2-serverpush.vcxproj" Id="9ff5ed41-3f12-3b2a-b722-fc3d86f2b210">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/http/clients/curlt-client-h2-upgrade-extreme.vcxproj" Id="5f8ae4ec-1b04-3b4d-b681-fdb1e9d9ea27">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/http/clients/curlt-client-hx-download.vcxproj" Id="68d737d7-f862-3bcd-aa1b-2cda8bd91602">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/http/clients/curlt-client-hx-upload.vcxproj" Id="cac51931-3aa0-3a01-ba7f-7c8a454c60a0">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/http/clients/curlt-client-tls-session-reuse.vcxproj" Id="21c2c3ff-847b-3088-b833-3d536f304a01">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/http/clients/curlt-client-upload-pausing.vcxproj" Id="960d49df-7bf3-3b8b-a549-b817a6c8c754">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/http/clients/curlt-client-ws-data.vcxproj" Id="95dd369b-eb5b-3262-8577-9d49c81df192">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/http/clients/curlt-client-ws-pingpong.vcxproj" Id="8a04eab8-6c9f-32c1-b5b1-f3d9d7c21638">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="lib/curlu.vcxproj" Id="25484885-3b14-388f-8175-b809379e6756">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="tests/server/disabled.vcxproj" Id="79408373-259c-3da2-ab4f-4d084f79af83">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="tests/server/getpart.vcxproj" Id="169640e9-b406-3c6c-89a0-1895bd027865">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1156.vcxproj" Id="44f02382-4623-3ef2-bb6c-12289b933e72">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1301.vcxproj" Id="66eab7cf-f458-39a0-9dc7-af43b51f3348">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1485.vcxproj" Id="5b3784e8-8341-394c-bc48-e32fb6e6b081">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1500.vcxproj" Id="3069b92a-4e4b-3ab7-9b00-61c54db9f083">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1501.vcxproj" Id="f20c715f-5c69-38c6-bf65-182371bae7f1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1502.vcxproj" Id="bd12717a-e17d-3e50-8405-009adc48e6fb">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1503.vcxproj" Id="6402904a-5dce-361b-a823-d4e2caf2a30a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1504.vcxproj" Id="84c7f638-b8d9-3765-936a-64cad03651f9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1505.vcxproj" Id="3b6413c3-b583-3d82-8988-a74e91572c4b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1506.vcxproj" Id="c26125cc-d537-30ca-b5dd-910523e590f2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1507.vcxproj" Id="3494e71a-9a5d-3d4f-ab65-35938d07e62c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1508.vcxproj" Id="f6c0c950-abda-3707-b2ab-84086b7ea945">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1509.vcxproj" Id="3fc263bf-1782-38cb-9082-3884b8a86177">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1510.vcxproj" Id="2fd7603a-da54-3a93-9a8c-4e187710cde1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1511.vcxproj" Id="a6fe7bbd-5124-38b6-a0f3-55ccad23ca99">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1512.vcxproj" Id="5fab9ce1-4e47-317f-9cf4-7d77c1910bd9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1513.vcxproj" Id="44dd965b-2162-356b-8fa0-9aefd02d22fd">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1514.vcxproj" Id="13b09fcd-8401-3c4f-adcc-d3d0bbc256fd">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1515.vcxproj" Id="08ca1d7f-a382-3086-af02-1661e1ee13f4">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1517.vcxproj" Id="e512567b-a5d3-3bd8-a6da-f6f14b1d02fb">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1518.vcxproj" Id="54de83c3-e9a3-3a17-9c17-c7a6048d8eea">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1520.vcxproj" Id="553b1e24-7098-3df1-a768-f8fd4fe100d8">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1521.vcxproj" Id="82d9281e-3c27-3605-b0b7-ba9e7567aa3c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1522.vcxproj" Id="c1009c86-834d-3e39-8839-1508186686d1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1523.vcxproj" Id="5a6f5d50-7a3e-30c7-9c63-80592816e11c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1525.vcxproj" Id="4020109a-05b4-3e96-8508-61f823c87a2a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1526.vcxproj" Id="d41e299d-80b7-3dca-ab14-db25d4fdf280">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1527.vcxproj" Id="92428fc7-e1ca-3787-b4e0-a35275a7a547">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1528.vcxproj" Id="ee27ae34-9065-38ef-b781-4c5b920d6de7">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1529.vcxproj" Id="3c7f6de5-c551-3926-9e7f-272fb3033c34">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1530.vcxproj" Id="bef6a29d-22d7-3071-8e13-ef289b94ca79">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1531.vcxproj" Id="8dbea969-c05b-3526-b14a-e184545010ce">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1532.vcxproj" Id="4e64b221-1d9d-3840-a9e1-754eebb07918">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1533.vcxproj" Id="b7237c4d-0e57-3777-b616-72979ed9dc25">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1534.vcxproj" Id="9dc06c86-54c9-3d41-8620-6ff124d84d01">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1535.vcxproj" Id="2a006c68-a2ba-3a67-93a6-2fd9a0e3a226">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1536.vcxproj" Id="f12ba578-364f-3ab8-8beb-8c780f64b02c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1537.vcxproj" Id="416badc0-1e82-322f-b73d-31a8a238dfe0">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1538.vcxproj" Id="f41ca9eb-32d7-3b61-a67a-a694cb49adbb">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1539.vcxproj" Id="7060f079-ec64-3a7f-88da-403e9acf493b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1540.vcxproj" Id="a790f2e5-3e7f-3cba-bef8-98b320f798bb">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1541.vcxproj" Id="6c82815c-b613-3d02-aac5-f93da55250c1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1542.vcxproj" Id="746e0224-c83d-39c2-98a1-9aa570def49e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1543.vcxproj" Id="e1aa441b-17fb-379c-8381-87b68774516a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1545.vcxproj" Id="703826d4-9109-376a-ae26-42c9df206748">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1550.vcxproj" Id="1198bfcd-7f74-37cc-95a5-6b51942b112e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1551.vcxproj" Id="78bcfd9c-fca0-306d-9cfa-199944ac6937">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1552.vcxproj" Id="6f98ead9-84f7-3875-a889-b3295e07de0b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1553.vcxproj" Id="bb4a9325-0967-3f14-adb3-9d5ae6152e7e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1554.vcxproj" Id="0a2254fb-9908-3484-896f-237ef935e7d3">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1555.vcxproj" Id="012f75aa-5826-376b-a0d6-c4dba1b29cad">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1556.vcxproj" Id="313f798e-576f-339f-9079-5f74712a3267">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1557.vcxproj" Id="0929dba3-8094-358c-a9f5-02a69d06b079">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1558.vcxproj" Id="dfda0520-bf39-365a-ac6e-20554df4e8aa">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1559.vcxproj" Id="4d865ab2-f225-3b48-8d74-dfee6e535a48">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1560.vcxproj" Id="c97f03b4-6b31-3c02-b53e-187950cd5938">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1564.vcxproj" Id="e0309640-8b46-33d7-bc33-23fc14f4781f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1565.vcxproj" Id="fd0a1fce-7f6d-3afd-88c8-2d8f11b2ed0e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1567.vcxproj" Id="3347c702-42a4-3890-9af4-994db59e20f9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1568.vcxproj" Id="f2116bb6-92b5-397c-85f7-ad8f6b835ec4">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1569.vcxproj" Id="502677d2-bc98-3cc1-b6f0-24e110bf5131">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1591.vcxproj" Id="8c0f1e6b-f20d-3561-ba45-c2a27f8238ab">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1592.vcxproj" Id="710d4ecc-d11d-31e6-96d2-c6b606dbe33e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1593.vcxproj" Id="7b24533e-a422-353b-a481-f1944e2dc336">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1594.vcxproj" Id="09685eba-70ed-3407-b08b-8de35bebd57a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1596.vcxproj" Id="1c2d7bc7-fa11-3633-8560-ca153b090b3f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1597.vcxproj" Id="22282102-cf1e-3aba-a23f-879adedfeb38">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1598.vcxproj" Id="0a177066-eedb-3013-bb51-819cf8c9e62c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1662.vcxproj" Id="7b738ae1-58ca-394f-9e03-34c55dbae4e2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1900.vcxproj" Id="144b3233-cb8c-3bb7-b903-24c419a25356">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1901.vcxproj" Id="55fe4f4e-0fd2-3921-b5e3-1d9769903e3f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1903.vcxproj" Id="cbd1fb9f-2df9-3be8-a97d-6a705bd0bf52">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1905.vcxproj" Id="12d60846-e4aa-3da6-93f3-de01eb590371">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1906.vcxproj" Id="9f1cdea5-5a11-3b73-9509-57c844f40fb9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1907.vcxproj" Id="3b4140e7-31b0-3a59-a93a-503768e996cd">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1908.vcxproj" Id="d1d5b704-c08f-35ed-ab23-0f9a1f364511">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1910.vcxproj" Id="c4f070eb-0d1c-331a-bd0b-4f7c4a84fdaf">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1911.vcxproj" Id="dd340a3e-e405-34e0-8302-3d5357ba7ecc">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1912.vcxproj" Id="8edf5f1f-dcd4-3143-8b6f-f4fe3afc17b4">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1913.vcxproj" Id="1ec5970f-197b-384c-a850-626fce721233">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1915.vcxproj" Id="b78d4d89-058f-307d-9f5b-25b90110671b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1916.vcxproj" Id="f2a2a51d-11ad-3cd1-a5d9-1e656230d4ce">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1917.vcxproj" Id="835ff229-980f-3751-ad27-3b6637bf0365">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1918.vcxproj" Id="42c71fdd-8d11-34d4-978d-f91b04487212">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1919.vcxproj" Id="268c556f-b390-33d9-9289-34e2733a8f9e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1933.vcxproj" Id="197a7750-9f8c-38f7-95ec-900e80199df3">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1934.vcxproj" Id="56e84859-0f4f-3899-bb88-a64147eea857">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1935.vcxproj" Id="d76e049e-d311-372d-996f-bfc3105cdd8c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1936.vcxproj" Id="b2652dd2-7eaf-33ac-acc4-0f3b85c81a94">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1937.vcxproj" Id="14022272-02dd-39c5-8f65-40c88ebdad01">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1938.vcxproj" Id="e59a6ec7-24a2-3e83-961e-f3b7bac30492">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1939.vcxproj" Id="d24d1fb7-ad53-3a3e-a938-c9addcf5bdf1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1940.vcxproj" Id="037d335d-c061-3a7b-9913-bd507556ca53">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1945.vcxproj" Id="4090ac40-1198-375e-9a7a-d12afc7394ea">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1946.vcxproj" Id="e480da59-2da2-36d0-af87-4b23f1314d4a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1947.vcxproj" Id="cc47fbe0-bdce-3992-9527-606dd04f5b10">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1948.vcxproj" Id="63e3251c-4fef-376b-93c7-3bb0d1b3f926">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1955.vcxproj" Id="192460e1-7c39-3918-b4aa-4e08c727f0d2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1956.vcxproj" Id="db82d90a-8773-391b-a78a-ceb14561375f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1957.vcxproj" Id="32f86040-210f-3344-9822-8e3aa86a8de4">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1958.vcxproj" Id="922e7264-2edf-30b3-bb7c-d444598745f3">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1959.vcxproj" Id="b12f0581-832f-3445-9f8d-5ea0c7d175b5">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1960.vcxproj" Id="1d5be01f-acec-3139-b1eb-fcdf24c97e75">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1964.vcxproj" Id="308d240e-d6d7-3e5e-97dc-88d864c90c7a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1970.vcxproj" Id="f6aa9646-7270-374f-b5d4-dc05cb848a69">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1971.vcxproj" Id="b05135c8-29ce-3b39-9ea9-af81f0898ab3">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1972.vcxproj" Id="a8a1a347-fe6f-3de5-a8ab-1a377a35c6b0">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1973.vcxproj" Id="4c6b748c-7f64-3265-99ba-55676254fe02">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1974.vcxproj" Id="6705fe1f-eb88-3e9f-9299-76269002adac">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib1975.vcxproj" Id="6701b6a0-4201-33a3-81ae-d20a6a81fff2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib2301.vcxproj" Id="682d358f-6dc0-34ad-ba33-2acb4cd37d12">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib2302.vcxproj" Id="652006ff-e8c2-37e6-90d6-048bd1f69783">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib2304.vcxproj" Id="13fd03a2-e045-35ef-9b6f-1eb52dfdd4c2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib2305.vcxproj" Id="f753ab37-38bd-3dd1-9a16-fc27adb484d4">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib2306.vcxproj" Id="d4f23879-ea19-3dfd-a45b-87b853071d8d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib2308.vcxproj" Id="f8a9a928-f6c5-3c5e-ab4b-a8cd8ebfba71">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib2402.vcxproj" Id="0a59ef6e-73aa-3573-8083-eabb7b6d9a9d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib2404.vcxproj" Id="dc37477b-3de0-389a-9b7a-8c8d5ee9155a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib2405.vcxproj" Id="5bc45dfe-ae07-3ba1-872a-e8264345f951">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib2502.vcxproj" Id="8542a12d-3719-3f26-a2dd-0be2fb90444b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib3010.vcxproj" Id="d8b08a96-07e8-3468-8c12-1c0b4c490c59">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib3025.vcxproj" Id="00a3a99b-d218-3233-940e-a5af0088c4b3">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib3026.vcxproj" Id="6ad7fffa-1190-38fe-a5a3-e09426cb6457">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib3027.vcxproj" Id="e77ff4ee-84fa-34d5-b22f-9b4cd026fb73">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib3100.vcxproj" Id="b009c39f-66f4-37e0-8fe1-656014d1885d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib3101.vcxproj" Id="b4a549d6-f828-3c63-880f-d335c4ed8196">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib3102.vcxproj" Id="bb91f13e-7775-33d1-8b3e-ab71d5117761">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib3103.vcxproj" Id="0a2637fa-8487-343b-ac9c-a05face16f98">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib3207.vcxproj" Id="7aea820b-cdac-3595-a6dc-c5846790fade">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib500.vcxproj" Id="5e5ad451-7cfd-3b7c-ac76-a5cb81a2d418">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib501.vcxproj" Id="46dc4705-43a7-3634-977d-04090230a5c7">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib502.vcxproj" Id="6f568b99-b13e-3f03-a53d-86e89ad6164b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib503.vcxproj" Id="bff621a9-87af-3825-8f08-24e1a7b8a348">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib504.vcxproj" Id="da2b5c5b-c26c-33ea-9bde-57fca0de26d3">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib505.vcxproj" Id="4491b328-f7ec-3da4-a8ce-a2f42e49c06a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib506.vcxproj" Id="0df90fc5-6e51-320e-b721-bbd31b46cee3">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib507.vcxproj" Id="202c137a-9079-30d4-848a-a4dd352c62a8">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib508.vcxproj" Id="52f44767-d6ff-328a-9261-6ec4d24b78c3">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib509.vcxproj" Id="3a6b73d7-6d8e-34b5-9c6c-ebdb525b587b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib510.vcxproj" Id="4351d927-866a-33c1-900c-75eda2f3c4c5">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib511.vcxproj" Id="4c5d102b-cbfc-326e-b731-77fa69ededa0">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib512.vcxproj" Id="b6f4fd52-24e2-3a8e-8922-d9ce78489d37">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib513.vcxproj" Id="9bad8cc6-f1a2-33c9-a7b1-7f0c62eeb0a2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib514.vcxproj" Id="d29eb777-c5c1-3f19-bb97-556ca7529ef9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib515.vcxproj" Id="f9f4a193-6313-355a-b898-49444b199d84">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib516.vcxproj" Id="9116b364-2e63-3993-9178-16b5e40e885f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib517.vcxproj" Id="224f89f8-3236-3928-9719-ce42b24cebea">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib518.vcxproj" Id="b87329c7-cb76-37df-b362-edc73504dfa5">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib519.vcxproj" Id="7adce738-483f-31f8-a6d1-b3a1cd738676">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib520.vcxproj" Id="c6a9770e-dc8f-3239-998d-5898e98322d8">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib521.vcxproj" Id="530313a6-0ee3-386f-b209-221d9289c344">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib523.vcxproj" Id="438d4aa4-962d-3c77-bcb7-46deae164a80">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib524.vcxproj" Id="3ea7d22a-82c6-3568-904c-cf7bd5ed682f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib525.vcxproj" Id="79f28bb1-99d3-339b-9660-1bc1eadd5fc7">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib526.vcxproj" Id="71ade2ec-607d-3663-96b4-50f63c332f6a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib527.vcxproj" Id="2c4413f2-1a30-3054-8198-988bd68d1747">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib529.vcxproj" Id="a5515f33-0628-3396-bed7-2f26a9cc4257">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib530.vcxproj" Id="ad9e6af7-8f0d-38aa-9abc-9d65dcd91dac">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib532.vcxproj" Id="ea3a6921-f066-3907-9aeb-b60234c8e417">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib533.vcxproj" Id="da4b512d-9744-35b6-b3bd-c4e2cae93d5e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib536.vcxproj" Id="67ce52ab-ce58-3d24-9847-28001aefbb94">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib537.vcxproj" Id="3d25570e-a38a-34ef-ba25-5c099c7cfd29">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib539.vcxproj" Id="1ec56d78-354a-3d3d-b4dd-1acdba0a9f86">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib540.vcxproj" Id="f8fde664-890c-3597-9a55-9ff70c118c5b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib541.vcxproj" Id="4d883a13-efdc-3d36-b190-d86543765c7b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib542.vcxproj" Id="2812695b-95fa-3ee6-940e-240a9ba92caf">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib543.vcxproj" Id="99b4101c-5e10-31f2-8eeb-b6f0ffcb645f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib544.vcxproj" Id="e7e9b5f4-08ab-3350-aad9-9f34bd001a05">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib545.vcxproj" Id="19052a80-4077-3a17-9cf0-193bc4d00a68">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib547.vcxproj" Id="503a26ee-6cd5-3a9f-b4c2-08c61841e8a1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib548.vcxproj" Id="1710bb06-443a-3474-8141-f76466fd944a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib549.vcxproj" Id="dcf08e74-53cf-3aae-9f01-6e15321d3063">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib552.vcxproj" Id="2f0e532b-ca04-3a94-97f8-58a0999b5731">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib553.vcxproj" Id="e92892c4-51c9-302a-a2b3-f78c49a43601">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib554.vcxproj" Id="f4990e5b-b022-303b-9144-09bddb47799c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib555.vcxproj" Id="c99675e5-a99b-38b2-a959-6e245233502a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib556.vcxproj" Id="310b36cc-90bf-3c78-a8bd-e19815a4d907">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib557.vcxproj" Id="15c94217-e159-3d35-a4bd-a7f0f416e607">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib558.vcxproj" Id="630a254c-1d0f-3ef6-af2a-9a49fa2ac9bc">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib559.vcxproj" Id="e0c77894-8f42-359d-97bc-4972a874d26d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib560.vcxproj" Id="ce9b1b4b-039d-394c-b710-7017983b9271">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib562.vcxproj" Id="05689970-d804-3501-94bd-1dd8ca0feaf1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib564.vcxproj" Id="39562321-15ea-3be8-9a9b-d785d258c16a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib565.vcxproj" Id="0b31fa37-d514-3742-bdc7-6bb9fff08e0d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib566.vcxproj" Id="a949034a-baec-3d48-a92d-59d0c3063b8d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib567.vcxproj" Id="b4aa656a-b765-345e-953c-34b41db18ddd">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib568.vcxproj" Id="282a6431-ef35-37d4-9aa2-ce1e91fba49e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib569.vcxproj" Id="534b76af-ec3f-383e-ba5d-f89999f6a741">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib570.vcxproj" Id="3e89fa42-7b50-387d-b077-8b142c153064">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib571.vcxproj" Id="84ca8ada-e47b-35c8-95ad-e45a41f93466">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib572.vcxproj" Id="565a0676-5cab-3770-8f2d-e62a22b96b75">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib573.vcxproj" Id="c703e251-d8c1-3f9a-a920-fff10255a2c6">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib574.vcxproj" Id="d1add6f0-e5c7-331c-bca7-fef4b45fabf8">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib575.vcxproj" Id="93416437-5710-3759-95e7-6e4f589563ff">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib576.vcxproj" Id="f88dd750-6292-32d4-bc7e-81be9a211281">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib578.vcxproj" Id="f3f3fd6a-ba7e-3d3e-980b-debcd7c840b0">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib579.vcxproj" Id="a153a2ef-2a58-34fa-a272-9cadaf5ce66f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib582.vcxproj" Id="1a37a6bc-8f8e-37b3-b8cb-995cb1e21ff2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib583.vcxproj" Id="7716f496-70df-32c3-ab39-b2b34f55d63e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib584.vcxproj" Id="ceac42ed-56b9-3a3d-9923-5307b8abd0af">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib585.vcxproj" Id="4dd25654-65f9-363e-9a37-1966904487e7">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib586.vcxproj" Id="1b7c8933-27e4-3256-bbb3-9890c2013b42">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib587.vcxproj" Id="7c33bf60-82db-3d26-a14c-b8267c78ede6">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib589.vcxproj" Id="fe4abb3e-9cd7-3837-a9c9-26fb957fd3df">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib590.vcxproj" Id="157e2469-07a5-3ced-ad6c-88d1607fd9aa">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib591.vcxproj" Id="5fd14120-70f2-367c-b8eb-f81b168f985d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib597.vcxproj" Id="fbd70785-3547-3421-88bf-88465f525fb4">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib598.vcxproj" Id="9b3d78c8-3091-3184-939d-f31154f6fe65">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib599.vcxproj" Id="03207b4d-b14b-3280-9375-e1de9f3323c8">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib643.vcxproj" Id="33bf8924-da67-377f-95f9-b306a5a921c6">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib645.vcxproj" Id="1e66d0e3-9a5f-3cac-8116-0eb3f52549ee">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib650.vcxproj" Id="a5b71875-033f-38d1-b611-d1a4bd161bb9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib651.vcxproj" Id="0b860bbe-ab3f-35a4-ab50-9483eb471f6f">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib652.vcxproj" Id="2d4cd129-15bb-30d5-950a-79189bd4553d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib653.vcxproj" Id="b16603cb-3bb3-358b-8405-45397abe0e16">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib654.vcxproj" Id="71d5e224-7e8c-36b3-a592-1d2a2e95367d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib655.vcxproj" Id="b765a61f-0c95-3ae7-98e7-b1e677d50ff0">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib658.vcxproj" Id="c022346b-8441-3a75-8796-0c8a1d4856af">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib659.vcxproj" Id="569b7908-e4de-3c6c-bacd-de96b5bf0b47">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib661.vcxproj" Id="bd130def-e9c2-39c7-af5c-a16aee323bd2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib666.vcxproj" Id="3f783c5a-ea00-3f16-b56d-872c03e17b01">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib667.vcxproj" Id="30ee656b-349a-3556-ad37-16e3a0cb33ae">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib668.vcxproj" Id="8cca9394-4f71-3e4c-9d3d-caae79332412">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib670.vcxproj" Id="664b4a81-4470-3881-b9af-ae4e01b991aa">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib671.vcxproj" Id="2d50bc8d-a4d7-391f-8144-3de1a2beb2c2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib672.vcxproj" Id="eab17a97-dda8-3879-9ca2-47c6a4198cfb">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib673.vcxproj" Id="8352f8cf-32e1-3056-b583-e5b71668267a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib674.vcxproj" Id="56b720bc-df57-311a-9d86-1017e7b640ca">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib676.vcxproj" Id="6e1f8bd2-37ae-3aee-9065-3ab2dd15f513">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib677.vcxproj" Id="df6c824a-86b8-3ff4-a6b1-c1734d45b5be">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/lib678.vcxproj" Id="e56070a5-cf50-30fb-9e7c-d74484cb2aea">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/libauthretry.vcxproj" Id="1ddf6137-7dbe-3ba0-a758-81157a660548">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="lib/libcurl_object.vcxproj" Id="c5907352-452c-35ca-9cb8-55869ff9b42a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="lib/libcurl_static.vcxproj" Id="0bf4b61c-5e79-3907-8997-480d2e9bf376">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_object.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/libntlmconnect.vcxproj" Id="f68e3443-6543-380c-83ec-2497987c86fa">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/libtest/libprereq.vcxproj" Id="8ae99474-e4c0-3e94-9f69-d2dd6888548d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/libcurl_static.vcxproj"/>
+	</Project>
+	<Project Path="tests/server/mqttd.vcxproj" Id="cc2c7061-f6d0-31cc-9557-66c6465c7f8d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="tests/server/resolve.vcxproj" Id="3a2e3a7b-9f7b-3a5e-81bc-0c698dfa0571">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="tests/server/rtspd.vcxproj" Id="3346d02b-625a-3313-a272-2f0176db51fc">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="tests/server/sockfilt.vcxproj" Id="b8542e07-d21b-36e6-9516-641abc49b5c9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="tests/server/socksd.vcxproj" Id="f4839edb-23b7-37a0-9764-f9fb7fc0732e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="tests/server/sws.vcxproj" Id="741e1de6-7089-34e1-9c8d-f287202f5d82">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="tests/test-am.vcxproj" Id="0e0f3c7d-b675-326c-a64a-2364bf6074e4">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="tests/testdeps.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="tests/test-ci.vcxproj" Id="77adfe35-d209-31f9-a75c-49312e8aa5b0">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="tests/test-event.vcxproj" Id="39404104-e13c-36c1-95cb-6023008575d2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="tests/testdeps.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="tests/test-full.vcxproj" Id="d4b92cea-82f4-364e-863f-a6f5ddd2b307">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="tests/testdeps.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="tests/http/clients/test-http-clients.vcxproj" Id="c98dacdd-eb4b-3ce0-a1d3-96a0625d0a22">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-h2-pausing.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-h2-serverpush.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-h2-upgrade-extreme.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-hx-download.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-hx-upload.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-tls-session-reuse.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-upload-pausing.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-ws-data.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-ws-pingpong.vcxproj"/>
+	</Project>
+	<Project Path="tests/test-nonflaky.vcxproj" Id="67073e8c-8ad5-334c-866f-6945811f6ac9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="tests/testdeps.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="tests/test-quiet.vcxproj" Id="2c8e9389-37a8-3212-b17c-0ca6a53e9ae2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="tests/testdeps.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="tests/test-torture.vcxproj" Id="f10c8162-9332-32ac-910b-48b2930f82cd">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="tests/testdeps.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="tests/testdeps.vcxproj" Id="3783f4ed-3708-366b-9c25-b8b21ee5ac1a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-h2-pausing.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-h2-serverpush.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-h2-upgrade-extreme.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-hx-download.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-hx-upload.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-tls-session-reuse.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-upload-pausing.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-ws-data.vcxproj"/>
+		<BuildDependency Project="tests/http/clients/curlt-client-ws-pingpong.vcxproj"/>
+		<BuildDependency Project="tests/server/disabled.vcxproj"/>
+		<BuildDependency Project="tests/server/getpart.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1156.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1301.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1485.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1500.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1501.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1502.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1503.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1504.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1505.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1506.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1507.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1508.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1509.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1510.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1511.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1512.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1513.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1514.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1515.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1517.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1518.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1520.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1521.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1522.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1523.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1525.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1526.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1527.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1528.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1529.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1530.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1531.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1532.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1533.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1534.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1535.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1536.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1537.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1538.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1539.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1540.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1541.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1542.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1543.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1545.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1550.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1551.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1552.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1553.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1554.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1555.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1556.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1557.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1558.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1559.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1560.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1564.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1565.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1567.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1568.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1569.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1591.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1592.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1593.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1594.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1596.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1597.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1598.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1662.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1900.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1901.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1903.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1905.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1906.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1907.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1908.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1910.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1911.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1912.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1913.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1915.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1916.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1917.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1918.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1919.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1933.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1934.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1935.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1936.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1937.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1938.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1939.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1940.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1945.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1946.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1947.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1948.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1955.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1956.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1957.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1958.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1959.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1960.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1964.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1970.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1971.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1972.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1973.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1974.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib1975.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib2301.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib2302.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib2304.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib2305.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib2306.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib2308.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib2402.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib2404.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib2405.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib2502.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib3010.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib3025.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib3026.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib3027.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib3100.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib3101.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib3102.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib3103.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib3207.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib500.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib501.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib502.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib503.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib504.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib505.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib506.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib507.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib508.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib509.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib510.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib511.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib512.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib513.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib514.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib515.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib516.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib517.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib518.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib519.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib520.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib521.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib523.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib524.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib525.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib526.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib527.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib529.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib530.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib532.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib533.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib536.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib537.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib539.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib540.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib541.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib542.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib543.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib544.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib545.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib547.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib548.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib549.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib552.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib553.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib554.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib555.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib556.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib557.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib558.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib559.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib560.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib562.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib564.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib565.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib566.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib567.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib568.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib569.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib570.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib571.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib572.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib573.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib574.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib575.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib576.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib578.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib579.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib582.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib583.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib584.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib585.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib586.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib587.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib589.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib590.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib591.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib597.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib598.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib599.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib643.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib645.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib650.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib651.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib652.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib653.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib654.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib655.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib658.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib659.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib661.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib666.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib667.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib668.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib670.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib671.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib672.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib673.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib674.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib676.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib677.vcxproj"/>
+		<BuildDependency Project="tests/libtest/lib678.vcxproj"/>
+		<BuildDependency Project="tests/libtest/libauthretry.vcxproj"/>
+		<BuildDependency Project="tests/libtest/libntlmconnect.vcxproj"/>
+		<BuildDependency Project="tests/libtest/libprereq.vcxproj"/>
+		<BuildDependency Project="tests/server/mqttd.vcxproj"/>
+		<BuildDependency Project="tests/server/resolve.vcxproj"/>
+		<BuildDependency Project="tests/server/rtspd.vcxproj"/>
+		<BuildDependency Project="tests/server/sockfilt.vcxproj"/>
+		<BuildDependency Project="tests/server/socksd.vcxproj"/>
+		<BuildDependency Project="tests/server/sws.vcxproj"/>
+		<BuildDependency Project="tests/server/tftpd.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1300.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1302.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1303.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1304.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1305.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1307.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1308.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1309.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1323.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1330.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1394.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1395.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1396.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1397.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1398.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1399.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1600.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1601.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1602.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1603.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1604.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1605.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1606.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1607.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1608.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1609.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1610.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1611.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1612.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1614.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1615.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1616.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1620.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1621.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1650.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1651.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1652.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1653.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1654.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1655.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1656.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1660.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1661.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit1663.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit2600.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit2601.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit2602.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit2603.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit2604.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit3200.vcxproj"/>
+		<BuildDependency Project="tests/unit/unit3205.vcxproj"/>
+	</Project>
+	<Project Path="tests/server/tftpd.vcxproj" Id="d9fc1fd9-75b4-3a3d-852d-d9aa9bcc162e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1300.vcxproj" Id="6752eab4-98a6-3c04-8fe0-e692ef775052">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1302.vcxproj" Id="e8e02ef7-f289-34de-9f96-bc100ef11ac1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1303.vcxproj" Id="0f1737f8-64b6-3baa-aeab-9a9e7eb647f5">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1304.vcxproj" Id="bf5fe98d-209c-3245-a4ed-6d04e6088438">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1305.vcxproj" Id="b9c98ee0-a4d9-3be3-bf9d-1b380fb5fc20">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1307.vcxproj" Id="b1e32265-6ef1-33a7-8eb1-dac6bda87768">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1308.vcxproj" Id="d285ce92-2109-329d-bf88-65b601b81a5e">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1309.vcxproj" Id="9d726abf-460e-37e2-abdd-af8c3eb0ff60">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1323.vcxproj" Id="e0cb0c95-cb09-338e-a77a-4886678ed5d9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1330.vcxproj" Id="869d6fd1-ab89-33df-92ee-6aa5c1671086">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1394.vcxproj" Id="2259e1ee-ecff-3dac-8285-4ad516436d02">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1395.vcxproj" Id="6d42df34-191e-31a5-a204-4625c5682c47">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1396.vcxproj" Id="d4add4b2-3dd7-311b-be08-e2212a584a9b">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1397.vcxproj" Id="9a2e0375-66db-30e0-8b21-75679741ff1d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1398.vcxproj" Id="502e3c94-6c63-3004-9920-e3482011abe9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1399.vcxproj" Id="3412406d-c310-3760-828c-99e7f56afd85">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1600.vcxproj" Id="7ea34fe3-85c9-3d77-ba34-422294c87890">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1601.vcxproj" Id="fd8406ff-bfb2-33e4-bebb-eba2cf11f619">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1602.vcxproj" Id="b4600028-3ff4-30fc-be10-266c78a575de">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1603.vcxproj" Id="d261f45a-12fa-3885-9d7b-384aa7177b18">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1604.vcxproj" Id="4cf42646-466e-3556-9d3a-6762ad525e53">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1605.vcxproj" Id="632172f2-2731-354e-a473-077bf5c5f581">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1606.vcxproj" Id="4518ae4a-7532-3ebb-b9df-9acf5a3d8b2d">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1607.vcxproj" Id="5e6892b3-5a86-3fdf-af2b-eaec8e922799">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1608.vcxproj" Id="5cea3ee7-e950-30dd-a8d9-4e515b719a06">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1609.vcxproj" Id="3e701924-c17a-3e57-8457-f1eebba86de1">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1610.vcxproj" Id="c813f0a7-3262-32b4-95df-19aafcdaec91">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1611.vcxproj" Id="332529d4-2d06-3db2-9750-87ebbffc2b14">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1612.vcxproj" Id="6209e3af-a29b-3437-8d5e-43e45d7bd9b5">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1614.vcxproj" Id="ed4e725a-0e17-3279-ad2c-b66bdcf885f9">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1615.vcxproj" Id="a67cfae5-f956-3878-8039-00f1e1a8d7ad">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1616.vcxproj" Id="66bb6a11-e0ae-3911-a00b-92bf36b39fa5">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1620.vcxproj" Id="abaeff27-c7d7-3f75-876a-f52f29b73efb">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1621.vcxproj" Id="66ec4268-2c3e-3d70-b55b-2563d1db8835">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1650.vcxproj" Id="8a43e3b0-c332-356c-bb71-2a5de2cee051">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1651.vcxproj" Id="57db6898-95b4-3450-bbbc-8c44563e0e15">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1652.vcxproj" Id="ae046f77-2c47-3724-be9a-0e223e1cb4df">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1653.vcxproj" Id="f18b237d-2d85-39e0-923c-f530670779ba">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1654.vcxproj" Id="4913177c-ba3d-366d-87c0-7f8280178800">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1655.vcxproj" Id="4faab349-3f56-3757-88b6-3a309f4ded66">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1656.vcxproj" Id="378c332b-1adf-3e0f-8d9c-201e577a12ef">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1660.vcxproj" Id="471b190a-2047-3df5-83e7-95091fe3fbf2">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1661.vcxproj" Id="70af77f9-7c1f-3e73-9960-e2882b4e644c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit1663.vcxproj" Id="23c1a772-725e-3e07-8e91-bdd931bca351">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit2600.vcxproj" Id="005f0229-e28c-3230-a24b-a965dfa73d35">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit2601.vcxproj" Id="3997488e-a850-3546-b48d-91c8a6498791">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit2602.vcxproj" Id="26c5870f-f09e-357f-8d4d-8e435083f5c8">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit2603.vcxproj" Id="d6d05c79-55bb-3e6e-922f-b7b97cbadd74">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit2604.vcxproj" Id="cdceeed3-ce92-3f47-ac61-8b20a972079a">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit3200.vcxproj" Id="ece09917-ab3f-3239-a8fb-845474b5a035">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+	<Project Path="tests/unit/unit3205.vcxproj" Id="e4ce144a-9731-3bad-9cc4-5d5d5bdd0299">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="lib/curlu.vcxproj"/>
+	</Project>
+</Solution>
