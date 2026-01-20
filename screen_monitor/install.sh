@@ -42,10 +42,10 @@ GROUP_ID=$(id -g $REAL_USER)
 echo "--- 5. Создание системного демона (Systemd) ---"
 SERVICE_FILE="/etc/systemd/system/screen-monitor.service"
 
-DETECTED_DISPLAY=$(who | grep "($REAL_USER)" | grep -o '(:[0-9])' | head -n 1 | tr -d '()')
-if [ -z "$DETECTED_DISPLAY" ]; then
-    DETECTED_DISPLAY=":0"
-fi
+# Улучшенное определение дисплея и пути к .Xauthority
+DETECTED_DISPLAY=$(who | grep "($REAL_USER)" | grep -o ':[0-9]' | head -n 1)
+[ -z "$DETECTED_DISPLAY" ] && DETECTED_DISPLAY=":0"
+XAUTH_PATH="/home/$REAL_USER/.Xauthority"
 
 cat <<EOF > $SERVICE_FILE
 [Unit]
@@ -61,10 +61,10 @@ ExecStart=$INSTALL_PATH
 Restart=always
 RestartSec=30
 
-# Переменные для доступа к иксам (скриншотам)
+# Переменные для доступа к графической сессии
 Environment=DISPLAY=$DETECTED_DISPLAY
+Environment=XAUTHORITY=$XAUTH_PATH
 Environment=XDG_RUNTIME_DIR=/run/user/$USER_ID
-# Чтобы curl не падал при отсутствии интернета сразу
 Environment=CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 
 [Install]
