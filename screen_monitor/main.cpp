@@ -135,8 +135,8 @@ void send_file(string filename, string user) {
         curl_mime_name(field, "user");
         curl_mime_data(field, user.c_str(), CURL_ZERO_TERMINATED);
 
-        // TODO: Вынести IP в конфиг
-        curl_easy_setopt(curl, CURLOPT_URL, "http://192.168.31.173:5000/upload");
+        // TODO: Вынести IP:port в конфиг
+        curl_easy_setopt(curl, CURLOPT_URL, "http://.../upload");
         curl_easy_setopt(curl, CURLOPT_MIMEPOST, form);
 
         CURLcode res = curl_easy_perform(curl);
